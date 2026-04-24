@@ -10,6 +10,15 @@ math: true
 
 Odds Ratio (OR) is a statistical measure used to quantify the strength of association between two events or conditions, particularly in the context of binary outcomes. It represents the ratio of the odds of an event occurring in one group (e.g., exposed group) to the odds of the same event occurring in another group (e.g., unexposed group). The odds ratio helps determine whether a particular exposure or factor increases or decreases the likelihood of an outcome, making it a fundamental tool in epidemiology, clinical research, and logistic regression analysis.
 
+To understand odds ratio, you must first clearly understand the concept of 'odds'.
+
+### Concept of Odds
+Odds is the value obtained by dividing the probability of an event occurring (p) by the probability of it not occurring (1-p). Unlike probability, which ranges from 0 to 1, odds ranges from 0 to infinity.
+
+$$Odds = \frac{p}{1-p}$$
+
+* **Example**: The probability of rolling a '1' on a die is p = 1/6. The probability of not rolling a '1' is 1 - p = 5/6. The odds at this time is (1/6) / (5/6) = 1/5 = 0.2. That is, it means the ratio of success to failure.
+
 ## Calculation
 
 The odds ratio is calculated from a 2x2 contingency table that cross-tabulates the exposure (or predictor) and the outcome (or response). The table is structured as follows:
@@ -20,10 +29,15 @@ The odds ratio is calculated from a 2x2 contingency table that cross-tabulates t
 | Unexposed      | c               | d              | c + d |
 | Total          | a + c           | b + d          | N     |
 
+Assuming a 2x2 contingency table as above, odds ratio is calculated as follows.
+
+* **Odds of occurrence in exposed group**: occurrence (a) / non-occurrence (b) = a/b
+* **Odds of occurrence in unexposed group**: occurrence (c) / non-occurrence (d) = c/d
+
 The odds ratio is then computed as:
 
 $$
-\text{OR} = \frac{a/b}{c/d} = \frac{a \times d}{b \times c} \quad (1)
+\text{OR} = \frac{Odds_{\text{exposed}}}{Odds_{\text{unexposed}}} = \frac{a/b}{c/d} = \frac{a \times d}{b \times c} \quad (1)
 $$
 
 Where:
@@ -32,7 +46,15 @@ Where:
 - $c$ is the number of unexposed individuals with the outcome.
 - $d$ is the number of unexposed individuals without the outcome.
 
-An OR of 1 indicates no association between the exposure and the outcome. An OR greater than 1 suggests a positive association (increased risk), while an OR less than 1 indicates a negative association (decreased risk).
+## Interpretation
+
+The calculated odds ratio value is interpreted based on the reference point of **1**.
+
+* **OR = 1**: There is no association between exposure and event occurrence. (The odds of occurrence in the two groups are the same)
+* **OR > 1**: Exposure increases the risk of event occurrence. (Risk factor)
+    * Example: If the odds ratio of lung cancer occurrence in the smoker group compared to the non-smoker group is 5, it means smoking increases the odds of lung cancer occurrence by 5 times.
+* **OR < 1**: Exposure decreases the risk of event occurrence. (Protective factor)
+    * Example: If the odds ratio of infection in the vaccinated group compared to the unvaccinated group is 0.2, it means vaccination reduces the odds of infection by 80%.
 
 ## Necessity
 
@@ -61,7 +83,11 @@ Despite its widespread use, odds ratio has several limitations:
 ## Derived Subsequent Concepts
 
 Odds ratio has influenced several advanced concepts in statistics and machine learning:
-- **Logistic Regression**: Builds on OR by modeling the log-odds as a linear function of predictors, enabling prediction and inference.
+- **Logistic Regression**: Builds on OR by modeling the log-odds as a linear function of predictors, enabling prediction and inference. Logistic regression analysis, widely used in classification modeling, deals with data where the dependent variable is 0 or 1. At this time, to convert the result of the linear equation to a probability between 0 and 1, the **logit transformation**, which takes the natural log of the odds, is used.
+
+$$\ln\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \dots + \beta_n X_n$$
+
+In this equation, the value obtained by taking the natural exponent of a specific regression coefficient β₁ (e^{\beta_1}) is the **odds ratio** of that variable X₁. That is, it is used as an indicator that intuitively explains "how many times the odds of event occurrence change when X₁ increases by 1 unit."
 - **Cochran-Mantel-Haenszel Test**: Extends OR to stratified analyses, controlling for confounding in multiple strata.
 - **Meta-Analysis**: Combines OR from multiple studies to estimate overall effects, using methods like Mantel-Haenszel pooling.
 - **Bayesian Approaches**: Incorporate prior knowledge with OR to update probabilities in diagnostic testing and decision analysis.
