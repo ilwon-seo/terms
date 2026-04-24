@@ -28,6 +28,27 @@ Where:
 
 This function is also known as the logistic sigmoid or simply the sigmoid activation function in neural networks.
 
+### Input as Linear Combination
+
+In machine learning contexts, particularly in logistic regression and neural networks, the input $x$ is not just a single value but typically a **linear combination of weights and input features**:
+
+$$x = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_n X_n$$
+
+Or in vector form:
+
+$$x = \beta^T X$$
+
+Where:
+- $\beta_0$ is the bias (intercept) term.
+- $\beta_1, \beta_2, \ldots, \beta_n$ are the regression coefficients (weights).
+- $X_1, X_2, \ldots, X_n$ are the input features.
+
+Thus, the complete sigmoid function in the context of logistic regression becomes:
+
+$$\sigma(z) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_n X_n)}}$$
+
+This means the sigmoid function outputs a probability by first computing a weighted sum of inputs and then applying the sigmoid transformation. This is the fundamental mechanism that allows logistic regression and neural networks to model non-linear relationships between inputs and binary outputs.
+
 ## Properties
 
 The sigmoid function has several important properties:
