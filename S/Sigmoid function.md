@@ -107,6 +107,8 @@ y = sigmoid(x)
 
 plt.plot(x, y)
 plt.title('Sigmoid Function')
+plt.axvline(0, color='k')
+plt.yticks(np.arange(0, 1.1, 0.1))
 plt.xlabel('x')
 plt.ylabel('sigmoid(x)')
 plt.grid(True)
