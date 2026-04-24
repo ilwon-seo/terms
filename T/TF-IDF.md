@@ -1,10 +1,4 @@
----
-layout: post
-title: "TF-IDF: Term Frequency-Inverse Document Frequency"
-date: 2026-04-22
-categories: [Terms, DeepLearning]
-math: true
----
+# TF-IDF: Term Frequency-Inverse Document Frequency
 
 ## Definition
 
@@ -14,25 +8,25 @@ TF-IDF, or Term Frequency-Inverse Document Frequency, is a numerical statistic u
 
 The TF-IDF value for a term $t$ in a document $d$ within a corpus $D$ is calculated as the product of TF and IDF:
 
-$$
+```math
 \text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D) \tag{1}
-$$
+```
 
 ### Term Frequency (TF)
 TF measures the frequency of a term in a document. A common formula is:
 
-$$
+```math
 \text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d} \tag{2}
-$$
+```
 
 Variations include raw count or normalized versions.
 
 ### Inverse Document Frequency (IDF)
 IDF measures the rarity of a term across the corpus. It is calculated as:
 
-$$
+```math
 \text{IDF}(t, D) = \log \left( \frac{N}{n_t} \right) \tag{3}
-$$
+```
 
 Where:
 - $N$ is the total number of documents in the corpus.
@@ -40,9 +34,9 @@ Where:
 
 A smoothed version adds 1 to avoid division by zero:
 
-$$
+```math
 \text{IDF}(t, D) = \log \left( \frac{N}{n_t + 1} \right) \tag{4}
-$$
+```
 
 ## Necessity
 
