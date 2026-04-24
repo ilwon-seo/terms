@@ -1,9 +1,14 @@
 ---
-layout: post
-title: "Odds Ratio"
-date: 2026-04-24
-categories: [Terms, Statistics]
+title: Odds Ratio
+excerpt: Odds Ratio (OR) is a statistical measure used to quantify the strength of association between two events or conditions, particularly in binary outcomes.
+category: [Terms, Statistics]
+tags: [odds ratio, statistics, epidemiology, logistic regression]
+author: ilwon-seo
+date: 2026-04-24 00:00:00 +0000
+render_with_liquid: true
+toc: true
 math: true
+mermaid: true
 ---
 
 ## Definition
