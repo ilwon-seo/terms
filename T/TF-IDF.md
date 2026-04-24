@@ -8,25 +8,22 @@ TF-IDF, or Term Frequency-Inverse Document Frequency, is a numerical statistic u
 
 The TF-IDF value for a term $t$ in a document $d$ within a corpus $D$ is calculated as the product of TF and IDF:
 
-$$
-\text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D) \tag{1}
-$$
+**(1) TF-IDF Equation:**
+$$\text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D)$$
 
 ### Term Frequency (TF)
 TF measures the frequency of a term in a document. A common formula is:
 
-$$
-\text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d} \tag{2}
-$$
+**(2) Term Frequency:**
+$$\text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d}$$
 
 Variations include raw count or normalized versions.
 
 ### Inverse Document Frequency (IDF)
 IDF measures the rarity of a term across the corpus. It is calculated as:
 
-$$
-\text{IDF}(t, D) = \log \left( \frac{N}{n_t} \right) \tag{3}
-$$
+**(3) Inverse Document Frequency:**
+$$\text{IDF}(t, D) = \log \left( \frac{N}{n_t} \right)$$
 
 Where:
 - $N$ is the total number of documents in the corpus.
@@ -34,9 +31,8 @@ Where:
 
 A smoothed version adds 1 to avoid division by zero:
 
-$$
-\text{IDF}(t, D) = \log \left( \frac{N}{n_t + 1} \right) \tag{4}
-$$
+**(4) Smoothed IDF:**
+$$\text{IDF}(t, D) = \log \left( \frac{N}{n_t + 1} \right)$$
 
 ## Necessity
 
