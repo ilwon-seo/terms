@@ -83,11 +83,11 @@ Despite its widespread use, odds ratio has several limitations:
 ## Derived Subsequent Concepts
 
 Odds ratio has influenced several advanced concepts in statistics and machine learning:
-- **Logistic Regression**: Builds on OR by modeling the log-odds as a linear function of predictors, enabling prediction and inference. Logistic regression analysis, widely used in classification modeling, deals with data where the dependent variable is 0 or 1. At this time, to convert the result of the linear equation to a probability between 0 and 1, the **logit transformation**, which takes the natural log of the odds, is used.
+- **Logistic Regression**: Builds on OR by modeling the log-odds as a linear function of predictors, enabling prediction and inference. Logistic regression analysis, widely used in classification modeling, deals with data where the dependent variable is 0 or 1. Since the probability p is constrained between 0 and 1, making it difficult to model directly with linear regression, the **logit transformation** is used to convert the probability into logits, expanding the range to (-∞, ∞) for linear modeling. The logit function is the inverse of the logistic sigmoid function (commonly abbreviated as sigmoid function), which transforms probabilities into logits. The name "sigmoid" derives from the Greek words "sigma" (σ, meaning S) and "eidos" (εἶδος, meaning form or shape), referring to its S-shaped curve.
 
 $$\ln\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \dots + \beta_n X_n$$
 
-In this equation, the value obtained by taking the natural exponent of a specific regression coefficient β₁ (e^{\beta_1}) is the **odds ratio** of that variable X₁. That is, it is used as an indicator that intuitively explains "how many times the odds of event occurrence change when X₁ increases by 1 unit."
+In this equation, the value obtained by taking the natural exponent of a specific regression coefficient β₁ ($e^{\beta_1}$) is the **odds ratio** of that variable X₁. That is, it is used as an indicator that intuitively explains "how many times the odds of event occurrence change when X₁ increases by 1 unit."
 - **Cochran-Mantel-Haenszel Test**: Extends OR to stratified analyses, controlling for confounding in multiple strata.
 - **Meta-Analysis**: Combines OR from multiple studies to estimate overall effects, using methods like Mantel-Haenszel pooling.
 - **Bayesian Approaches**: Incorporate prior knowledge with OR to update probabilities in diagnostic testing and decision analysis.
