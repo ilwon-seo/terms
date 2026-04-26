@@ -27,6 +27,23 @@ These properties ensure that norms behave intuitively and consistently with our 
 
 ## Calculation
 
+```mermaid
+graph TD
+    Root[Norm] --> Vector[Vector Norms]
+    Root --> Matrix[Matrix Norms]
+    
+    Vector --> L1["L1 Norm<br>(Manhattan)"]
+    Vector --> L2["L2 Norm<br>(Euclidean)"]
+    Vector --> Lp["Lp Norm<br>(General)"]
+    Vector --> Linf["L∞ Norm<br>(Maximum)"]
+    
+    Matrix --> Frob["Frobenius Norm"]
+    Matrix --> Spec["Spectral Norm"]
+    Matrix --> Nuc["Nuclear Norm"]
+    
+    style Root fill:#f9f,stroke:#333,stroke-width:2px
+```
+
 Different types of norms are defined based on how they compute the magnitude of a vector. For a vector $\mathbf{v} = (v_1, v_2, \ldots, v_n)$ in $\mathbb{R}^n$, the most common norms are:
 
 ### L1 Norm (Manhattan Norm)
@@ -151,6 +168,23 @@ $$\mathbf{u} = \frac{\mathbf{v}}{\|\mathbf{v}\|}$$
 $$J(\mathbf{w}) = \frac{1}{2m}\sum_{i=1}^{m} (h_\mathbf{w}(\mathbf{x}^{(i)}) - y^{(i)})^2 + \lambda \|\mathbf{w}\|_p$$
 
 Where $\lambda$ controls the regularization strength and $p$ determines the norm type.
+
+```mermaid
+graph LR
+    Data[(Training Data)] --> Pred[Model Prediction]
+    Pred --> Loss[Original Loss<br>e.g., MSE]
+    
+    Weights[Model Weights] --> NormCalc{Norm Calculation}
+    NormCalc -->|p=1| L1[L1 Penalty]
+    NormCalc -->|p=2| L2[L2 Penalty]
+    
+    Loss --> TotalCost((Total Cost<br>Function))
+    L1 -.-> TotalCost
+    L2 -.-> TotalCost
+    
+    TotalCost --> Opt[Optimizer Updates Weights]
+    Opt --> Weights
+```
 
 - **Inner Product Spaces**: Norms define the geometric structure of inner product spaces (Hilbert spaces), where the L2 norm is derived from the inner product: $\|\mathbf{v}\|_2 = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$.
 - **Condition Numbers**: In numerical linear algebra, norms are used to define condition numbers that measure the sensitivity of a solution to perturbations in the input data.
