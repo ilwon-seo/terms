@@ -75,7 +75,7 @@ plt.grid(True, linestyle='--', alpha=0.5)
 plt.show()
 ```
 
-[Positive Correlation](./assets/CorrelationCoefficient_01.png)
+![Positive Correlation](./assets/CorrelationCoefficient_01.png)
 
 ## Interpretation
 
@@ -163,7 +163,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-[Limitations of Correlation](./assets/CorrelationCoefficient_02.png)
+![Limitations of Correlation](./assets/CorrelationCoefficient_02.png)
 
 
 ### Alternatives
