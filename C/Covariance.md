@@ -26,7 +26,7 @@ So covariance mainly captures the **direction of linear co-movement** rather tha
 
 For random variables $X$ and $Y$:
 
-$$\operatorname{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)]$$
+$$\mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)]$$
 
 For sample data:
 
@@ -38,17 +38,17 @@ The sample version is used in practice because population parameters are usually
 ### Key Properties
 
 - **Sign indicates direction**: Positive means same-direction movement, negative means opposite-direction movement.
-- **Symmetry**: $\operatorname{Cov}(X, Y) = \operatorname{Cov}(Y, X)$.
+- **Symmetry**: $\mathrm{Cov}(X, Y) = \mathrm{Cov}(Y, X)$.
 - **Units depend on variables**: The unit is the product of the units of $X$ and $Y$ (e.g., meter*second).
 - **Not normalized**: Magnitude is scale-dependent, so direct comparisons across datasets are often misleading.
-- **Variance relation**: $\operatorname{Cov}(X, X) = \operatorname{Var}(X)$.
+- **Variance relation**: $\mathrm{Cov}(X, X) = \mathrm{Var}(X)$.
 - **Independence implication**: If $X$ and $Y$ are independent, covariance is zero (the reverse is not always true).
 
 ## Calculation
 
 For population covariance:
 
-$$\operatorname{Cov}(X, Y) = \frac{1}{N}\sum_{i=1}^{N}(X_i-\mu_X)(Y_i-\mu_Y)$$
+$$\mathrm{Cov}(X, Y) = \frac{1}{N}\sum_{i=1}^{N}(X_i-\mu_X)(Y_i-\mu_Y)$$
 
 For sample covariance:
 
@@ -106,14 +106,14 @@ plt.show()
 
 ## Interpretation
 
-- **$\operatorname{Cov}(X,Y) > 0$**: Variables tend to move together.
-- **$\operatorname{Cov}(X,Y) < 0$**: Variables tend to move in opposite directions.
-- **$\operatorname{Cov}(X,Y) \approx 0$**: No clear linear co-movement.
+- **$\mathrm{Cov}(X,Y) > 0$**: Variables tend to move together.
+- **$\mathrm{Cov}(X,Y) < 0$**: Variables tend to move in opposite directions.
+- **$\mathrm{Cov}(X,Y) \approx 0$**: No clear linear co-movement.
 
 Covariance tells direction, not standardized strength.  
 For comparing relationship strength, use correlation:
 
-$$\rho_{XY} = \frac{\operatorname{Cov}(X,Y)}{\sigma_X \sigma_Y}$$
+$$\rho_{XY} = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y}$$
 
 Practical interpretation note:
 
@@ -238,7 +238,7 @@ Covariance directly supports many downstream methods:
 - **Multivariate Normal Distribution**: Covariance matrix defines spread and orientation.
 - **Linear Regression**: Slope in simple regression relates to covariance:
 
-$$\beta_1 = \frac{\operatorname{Cov}(X,Y)}{\operatorname{Var}(X)}$$
+$$\beta_1 = \frac{\mathrm{Cov}(X,Y)}{\mathrm{Var}(X)}$$
 
 - **Mahalanobis Distance**: Uses inverse covariance matrix to measure distance with feature correlation and scale considered.
 
