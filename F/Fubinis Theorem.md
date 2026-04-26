@@ -164,14 +164,19 @@ Fubini's Theorem provides a bridge between **geometric intuition** and **rigorou
 
 ```mermaid
 flowchart TD
-    Integral[Double Integral over Region]
-    Integral --> Order1[Integrate y first, then x]
-    Integral --> Order2[Integrate x first, then y]
+    Integral["Double Integral over Region"]
+    Order1["Integrate y first, then x"]
+    Order2["Integrate x first, then y"]
+    Result1["Same value if conditions hold"]
+    Meaning["Volume / Accumulated Quantity"]
 
-    Order1 --> Result1[Same value if conditions hold]
+    Integral --> Order1
+    Integral --> Order2
+
+    Order1 --> Result1
     Order2 --> Result1
 
-    Result1 --> Meaning[Volume / Accumulated Quantity]
+    Result1 --> Meaning
 
     style Result1 fill:#fff4dd,stroke:#d4a017
 ```
