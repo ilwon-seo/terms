@@ -178,7 +178,7 @@ fig.subplots_adjust(left=0.10, right=0.96, bottom=0.12, top=0.90)
 plt.show()
 ```
 
-![Determinant Area Scaling](./assets/Determinant_in_matrix__01.png)
+![Determinant Area Scaling](./assets/Determinant_in_matrix_01.png)
 
 ## Interpretation
 
