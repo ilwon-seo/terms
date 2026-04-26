@@ -38,6 +38,45 @@ where:
 
 * **Example**: If we observe that as the temperature ($X$) increases, ice cream sales ($Y$) also increase in a nearly linear fashion, the calculation will yield a positive $r$ close to $1$.
 
+## Python Implementation
+
+You can easily calculate the correlation coefficient and visualize it using Python libraries like `numpy` and `matplotlib`. The following code generates sample data, calculates Pearson's $r$, and plots a scatter plot with a trend line.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1. Generate sample data
+np.random.seed(42)
+x = np.random.rand(50) * 10
+# Create y with a strong positive correlation to x
+y = 2 * x + 1 + np.random.randn(50) * 2
+
+# 2. Calculate Pearson correlation coefficient
+correlation_matrix = np.corrcoef(x, y)
+r = correlation_matrix[0, 1]
+print(f"Pearson Correlation Coefficient (r): {r:.3f}")
+
+# 3. Visualize with a scatter plot and trend line
+plt.figure(figsize=(8, 5))
+plt.scatter(x, y, color='blue', alpha=0.6, label='Data points')
+
+# Add a linear trend line
+m, b = np.polyfit(x, y, 1)
+plt.plot(x, m*x + b, color='red', linewidth=2, label=f'Trend line (r = {r:.3f})')
+
+plt.title('Scatter Plot showing Positive Correlation')
+plt.xlabel('Variable X')
+plt.ylabel('Variable Y')
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.5)
+
+# Display the plot
+plt.show()
+```
+
+[Positive Correlation](./assets/CorrelationCoefficient_01.png)
+
 ## Interpretation
 
 The correlation coefficient provides a clear geometric and statistical meaning for the data:
@@ -83,6 +122,49 @@ Despite its utility, Pearson's $r$ has specific limitations:
 - **Linearity Only**: It only detects linear relationships. A perfect U-shaped (quadratic) relationship might result in $r = 0$.
 - **Outlier Sensitivity**: A single extreme outlier can significantly inflate or deflate the coefficient, leading to misleading conclusions.
 - **Anscombe's Quartet**: Different data distributions can result in the same correlation coefficient, emphasizing the need to visualize data using scatter plots.
+
+### Python Implementation: Limitations
+
+The following Python code demonstrates two major limitations of Pearson's $r$: its inability to capture non-linear relationships (yielding $r \approx 0$ for a perfect quadratic curve) and its extreme sensitivity to a single outlier.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+
+# 1. Limitation: Linearity Only (Perfect U-shaped relationship)
+x1 = np.linspace(-10, 10, 100)
+y1 = x1**2  # Perfect quadratic relationship
+r1 = np.corrcoef(x1, y1)[0, 1]
+
+ax1.scatter(x1, y1, color='purple', alpha=0.6)
+ax1.set_title(f"Non-linear (Quadratic) Relationship\nPearson r = {r1:.3f}")
+ax1.set_xlabel("X")
+ax1.set_ylabel("Y = X^2")
+ax1.grid(True, linestyle='--', alpha=0.5)
+
+# 2. Limitation: Outlier Sensitivity
+np.random.seed(42)
+x2 = np.random.rand(20) * 10
+y2 = np.random.rand(20) * 10  # Random data with no real correlation
+# Add one extreme outlier
+x2 = np.append(x2, 50)
+y2 = np.append(y2, 50)
+r2 = np.corrcoef(x2, y2)[0, 1]
+
+ax2.scatter(x2, y2, color='orange', alpha=0.8)
+ax2.set_title(f"Outlier Sensitivity\nPearson r = {r2:.3f}")
+ax2.set_xlabel("X")
+ax2.set_ylabel("Y")
+ax2.grid(True, linestyle='--', alpha=0.5)
+
+plt.tight_layout()
+plt.show()
+```
+
+[Limitations of Correlation](./assets/CorrelationCoefficient_02.png)
+
 
 ### Alternatives
 
