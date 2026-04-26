@@ -122,16 +122,14 @@ Practical interpretation note:
 
 ```mermaid
 flowchart TD
-    C[Covariance Value]
-    C --> P[Positive > 0]
-    C --> Z[Near Zero ~= 0]
-    C --> N[Negative < 0]
+    C[Covariance Sign]
+    C --> P[Positive Covariance]
+    C --> Z[Near-zero Covariance]
+    C --> N[Negative Covariance]
 
-    P --> P1[Move Together]
-    N --> N1[Move Oppositely]
-    Z --> Z1[Weak Linear Co-movement]
-
-    style Z fill:#fff4dd,stroke:#d4a017
+    P --> P1[Variables move together]
+    N --> N1[Variables move oppositely]
+    Z --> Z1[Weak linear co-movement]
 ```
 
 ## Necessity
