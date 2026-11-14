@@ -55,7 +55,7 @@ Examining the ROC curve can help compare binary classifiers across thresholds ra
 - [**Confusion Matrix**](../C/Confusion%20Matrix.md): Supplies the TP, FN, FP, and TN counts used to compute each operating point.
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Describes ROC-AUC among other classification measures.
 - [**ROC-AUC**](./ROC-AUC.md): The area under the ROC curve, which summarizes ranking performance across thresholds.
-- **Classification Threshold:** The score cutoff that selects an operating point on the curve.
+- [**Classification Threshold**](../C/Classification%20Threshold.md): The score cutoff that selects an operating point on the curve.
 
 ## References
 

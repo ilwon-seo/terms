@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title description">
+  <title id="title">Effect of changing a classification threshold</title>
+  <desc id="description">Two rows show the same illustrative classifier scores and actual labels. A lower threshold predicts more examples as positive than a higher threshold.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .label { font-size: 15px; }
+    .small { font-size: 13px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="40" text-anchor="middle" font-size="25" font-weight="700">A threshold turns scores into class predictions</text>
+  <text x="450" y="67" text-anchor="middle" font-size="14" fill="#4b5563">Illustrative scores — not measured data or calibrated probabilities</text>
+
+  <g transform="translate(0,0)">
+    <text x="58" y="133" font-size="18" font-weight="700">Lower threshold</text>
+    <text class="small" x="58" y="157">More cases are predicted positive</text>
+    <line x1="210" y1="192" x2="805" y2="192" stroke="#374151" stroke-width="2"/>
+    <rect x="448" y="176" width="357" height="32" fill="#d9f2e6"/>
+    <line x1="448" y1="168" x2="448" y2="220" stroke="#b45309" stroke-width="3" stroke-dasharray="6 5"/>
+    <text class="small" x="448" y="234" text-anchor="middle">threshold</text>
+    <text class="small" x="210" y="217" text-anchor="middle">lower score</text>
+    <text class="small" x="805" y="217" text-anchor="middle">higher score</text>
+    <g fill="#0072B2" stroke="#ffffff" stroke-width="2">
+      <circle cx="353" cy="192" r="9"/><circle cx="502" cy="192" r="9"/><circle cx="627" cy="192" r="9"/><circle cx="729" cy="192" r="9"/><circle cx="774" cy="192" r="9"/>
+    </g>
+    <g fill="#d55e00" stroke="#ffffff" stroke-width="2">
+      <rect x="264" y="183" width="18" height="18" rx="2"/><rect x="414" y="183" width="18" height="18" rx="2"/><rect x="550" y="183" width="18" height="18" rx="2"/><rect x="683" y="183" width="18" height="18" rx="2"/><rect x="751" y="183" width="18" height="18" rx="2"/>
+    </g>
+    <text class="small" x="627" y="180" text-anchor="middle">predicted positive region</text>
+  </g>
+
+  <g transform="translate(0,245)">
+    <text x="58" y="133" font-size="18" font-weight="700">Higher threshold</text>
+    <text class="small" x="58" y="157">Only higher-scoring cases are predicted positive</text>
+    <line x1="210" y1="192" x2="805" y2="192" stroke="#374151" stroke-width="2"/>
+    <rect x="656" y="176" width="149" height="32" fill="#d9f2e6"/>
+    <line x1="656" y1="168" x2="656" y2="220" stroke="#b45309" stroke-width="3" stroke-dasharray="6 5"/>
+    <text class="small" x="656" y="234" text-anchor="middle">threshold</text>
+    <text class="small" x="210" y="217" text-anchor="middle">lower score</text>
+    <text class="small" x="805" y="217" text-anchor="middle">higher score</text>
+    <g fill="#0072B2" stroke="#ffffff" stroke-width="2">
+      <circle cx="353" cy="192" r="9"/><circle cx="502" cy="192" r="9"/><circle cx="627" cy="192" r="9"/><circle cx="729" cy="192" r="9"/><circle cx="774" cy="192" r="9"/>
+    </g>
+    <g fill="#d55e00" stroke="#ffffff" stroke-width="2">
+      <rect x="264" y="183" width="18" height="18" rx="2"/><rect x="414" y="183" width="18" height="18" rx="2"/><rect x="550" y="183" width="18" height="18" rx="2"/><rect x="683" y="183" width="18" height="18" rx="2"/><rect x="751" y="183" width="18" height="18" rx="2"/>
+    </g>
+    <text class="small" x="730" y="180" text-anchor="middle">predicted positive region</text>
+  </g>
+
+  <g class="label">
+    <circle cx="290" cy="530" r="8" fill="#0072B2"/>
+    <text x="305" y="535">Actual positive</text>
+    <rect x="455" y="522" width="16" height="16" rx="2" fill="#d55e00"/>
+    <text x="480" y="535">Actual negative</text>
+    <rect x="635" y="522" width="18" height="16" fill="#d9f2e6"/>
+    <text x="662" y="535">Predicted positive score range</text>
+  </g>
+</svg>

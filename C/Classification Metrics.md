@@ -19,7 +19,7 @@ For binary classification, many label-based metrics are calculated from the four
 
 ## Calculation
 
-For one fixed classification threshold, common metrics include:
+For one fixed [classification threshold](./Classification%20Threshold.md), common metrics include:
 
 $$
 \text{Accuracy} = \frac{TP+TN}{TP+TN+FP+FN}.
@@ -73,7 +73,7 @@ Metric selection should reflect how predictions will be used. Accuracy can be in
 - [**F1 Score**](../F/F1%20Score.md): The harmonic mean of precision and recall.
 - [**ROC Curve**](../R/ROC%20Curve.md): Plots true-positive against false-positive rates across thresholds.
 - [**ROC-AUC**](../R/ROC-AUC.md): Summarizes the area under the ROC curve.
-- **Classification Threshold:** The cutoff used to convert a classifier's score into a predicted class.
+- [**Classification Threshold**](./Classification%20Threshold.md): The cutoff used to convert a classifier's score into a predicted class.
 
 ## References
 

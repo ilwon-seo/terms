@@ -51,7 +51,7 @@ ROC-AUC is useful for comparing binary classifiers by their score rankings witho
 
 - [**ROC Curve**](./ROC%20Curve.md): The curve whose area ROC-AUC summarizes.
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Describes ROC-AUC alongside label-based measures.
-- **Classification Threshold:** A score cutoff that selects one operating point on a ROC curve.
+- [**Classification Threshold**](../C/Classification%20Threshold.md): A score cutoff that selects one operating point on a ROC curve.
 - [**Class Imbalance**](../C/Class%20Imbalance.md): A distribution pattern that can make ROC-AUC less informative about the precision of positive predictions.
 
 ## References
