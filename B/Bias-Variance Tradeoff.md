@@ -15,11 +15,11 @@ mermaid: true
 
 The bias-variance tradeoff describes how systematic prediction error and sensitivity to the training data contribute to a model's expected prediction error. In regression under squared-error loss, this error can be decomposed into squared bias, variance, and irreducible noise [1].
 
-For a fixed input `$x$`, let `$f(x)$` be the true conditional mean response, and let `$D$` be a random training dataset. A model fitted on `$D$` predicts `$`\hat{f}_D(x)`$`. **Bias** is the difference between the average prediction over possible training datasets and `$f(x)$`; **variance** measures how much those predictions vary across such datasets.
+For a fixed input $x$, let $f(x)$ be the true conditional mean response, and let $D$ be a random training dataset. A model fitted on $D$ predicts $\hat{f}_D(x)$. **Bias** is the difference between the average prediction over possible training datasets and $f(x)$; **variance** measures how much those predictions vary across such datasets.
 
 ## Calculation
 
-Assume a new response is `$`y=f(x)+\epsilon`$`, where the noise has conditional mean zero and variance `$`\sigma^2(x)`$`. At a fixed input, the expected squared prediction error is:
+Assume a new response is $y=f(x)+\epsilon$, where the noise has conditional mean zero and variance $\sigma^2(x)$. At a fixed input, the expected squared prediction error is:
 
 $$
 \mathbb{E}_{D,\epsilon}\left[(y-\hat{f}_D(x))^2\mid x\right] = \left(\mathbb{E}_D[\hat{f}_D(x)]-f(x)\right)^2 + \text{Var}_D(\hat{f}_D(x)) + \sigma^2(x).

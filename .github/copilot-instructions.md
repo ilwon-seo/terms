@@ -13,8 +13,14 @@ The project is documentation-first: there is no application runtime, build syste
 - Preserve the existing file naming style: title-cased concept names, usually with the topic in the filename when needed.
 - Prefer concise but rigorous explanations, not marketing copy or filler.
 - Follow [GitHub's official mathematical-expression guidance](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions). GitHub renders Markdown math with MathJax.
-- For inline expressions, use `$...$`. If Markdown syntax characters conflict with the expression, GitHub also supports inline math delimited with `$` and backticks.
-- For display expressions, prefer `$$` delimiters on their own lines, with the formula between them and blank lines separating the block from surrounding prose. GitHub also supports fenced `math` blocks without `$$`; use one block style consistently.
+- In term articles, use standard `$...$` delimiters for inline math, including expressions with subscripts, superscripts, and TeX commands. Do not put a complete `$...$` expression inside a separate Markdown code span (for example, `` `$x$` ``), which displays the delimiters literally instead of rendering the math.
+
+  ```text
+  Here, $\mathbf{x}_i^\top$ is the $i$th row of $X$.
+  ```
+
+- GitHub also documents a `$`-backtick inline form for Markdown contexts that need it, but do not use it in term articles unless the actual site renderer has been verified to support it.
+- For display expressions, prefer `$$` delimiters on their own lines, with the formula between them and blank lines separating the block from surrounding prose. GitHub also supports fenced `math` blocks without `$$`; use one block style consistently only when the site renderer supports it.
 - Prefer standard LaTeX/MathJax commands. For repository consistency, do not use `\operatorname{...}`; use `\text{...}` for words or named functions in formulas (for example, write `\text{sign}`).
 - Use Mermaid diagrams sparingly when they support explanation.
 
@@ -84,6 +90,7 @@ For a practical validation step before finishing:
 - verify the file remains valid Markdown,
 - verify the YAML front matter is intact,
 - verify headings and math/diagram syntax are correctly formatted, including paired inline delimiters and display-math delimiters on separate lines,
+- verify inline math uses standard `$...$` delimiters without surrounding Markdown code backticks, and check it in the site's actual renderer,
 - follow the repository's formula convention: avoid `\operatorname{...}` and use `\text{...}` for words or named functions,
 - verify image links use relative paths and each image has a source citation in a body footnote,
 - confirm the new or edited content fits the existing repo conventions.
