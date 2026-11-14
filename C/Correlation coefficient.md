@@ -92,7 +92,7 @@ The correlation coefficient provides a clear geometric and statistical meaning f
 
 ```mermaid
 flowchart TD
-    Value[Correlation Value 'r']
+    Value[Correlation Coefficient 'r']
     Value --> Positive[Positive: r > 0]
     Value --> Zero[Zero: r = 0]
     Value --> Negative[Negative: r < 0]
@@ -104,6 +104,8 @@ flowchart TD
     Negative --> N2[-0.7: Strong Negative]
     
     style Zero fill:#fff4dd,stroke:#d4a017
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Value currentTerm
 ```
 
 ## Necessity
@@ -183,11 +185,13 @@ Correlation serves as a building block for advanced statistical modeling:
 ```mermaid
 graph LR
     subgraph Analysis
-        Corr[Correlation] --> Reg[Regression]
+        Corr[Correlation Coefficient] --> Reg[Regression]
         Corr --> Pred[Prediction]
     end
     Corr -- "Measures Strength" --> R2[R-Squared]
     Reg -- "Models Relationship" --> Slope[Beta Coefficients]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Corr currentTerm
 ```
 
 - **Partial Correlation**: Measures the relationship between two variables while controlling for the effect of one or more additional variables.

@@ -122,7 +122,7 @@ Practical interpretation note:
 
 ```mermaid
 flowchart TD
-    C[Covariance Sign]
+    C[Covariance]
     C --> P[Positive Covariance]
     C --> Z[Near-zero Covariance]
     C --> N[Negative Covariance]
@@ -130,6 +130,8 @@ flowchart TD
     P --> P1[Variables move together]
     N --> N1[Variables move oppositely]
     Z --> Z1[Weak linear co-movement]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class C currentTerm
 ```
 
 ## Necessity
@@ -248,4 +250,6 @@ graph LR
     CM --> MVN[Multivariate Gaussian]
     Cov --> Corr[Correlation]
     Cov --> Reg[Linear Regression]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Cov currentTerm
 ```

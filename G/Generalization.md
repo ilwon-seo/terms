@@ -29,7 +29,7 @@ $$
 \widehat{R}_{\text{test}} = \frac{1}{m}\sum_{i=1}^{m}\ell(\hat{f}_D(x_i),y_i).
 $$
 
-The test sample must not have been used to fit or select the model if its score is to provide an independent final evaluation. During model development, use a validation set or cross-validation for model and hyperparameter selection, then reserve a test set for final evaluation when available [1, 2].
+The test sample must not have been used to fit or select the model if its score is to provide an independent final evaluation. During model development, use a validation set or cross-validation for model and [hyperparameter](../H/Hyperparameter.md) selection, then reserve a test set for final evaluation when available [1, 2].
 
 ![Flow diagram showing how an independent test sample estimates a model's generalization performance](./assets/Generalization-1.svg)
 

@@ -48,7 +48,7 @@ Model development often involves many training runs with different configuration
 ## Derived Subsequent Concepts
 
 - **Training Run:** One execution of a model-training or evaluation procedure, recorded with its configuration and outputs.
-- **Hyperparameter:** A configuration choice varied between runs, such as a learning rate.
+- [**Hyperparameter**](../H/Hyperparameter.md): A configuration choice varied between runs, such as a learning rate.
 - [**Generalization**](../G/Generalization.md): The ability to perform usefully on observations not used to fit a model.
 - **Reproducibility in Machine Learning:** The ability to verify or repeat reported results using documented code, data, and experimental details [2].
 - **Model Selection:** Choosing a model or configuration based on a prespecified evaluation procedure.
@@ -65,6 +65,8 @@ flowchart LR
   artifacts --> record
   record --> compare["Compare runs"]
   compare --> selection["Model or configuration selection"]
+  classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+  class tracking currentTerm
 ```
 
 ## References

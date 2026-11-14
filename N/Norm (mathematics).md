@@ -41,7 +41,8 @@ graph TD
     Matrix --> Spec["Spectral Norm"]
     Matrix --> Nuc["Nuclear Norm"]
     
-    style Root fill:#f9f,stroke:#333,stroke-width:2px
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Root currentTerm
 ```
 
 Different types of norms are defined based on how they compute the magnitude of a vector. For a vector $\mathbf{v} = (v_1, v_2, \ldots, v_n)$ in $\mathbb{R}^n$, the most common norms are:
@@ -101,6 +102,11 @@ The value of a norm represents the "size" or "magnitude" of the vector or matrix
     * **L∞ Norm**: Emphasizes the maximum component (useful for worst-case analysis)
 ```mermaid
 flowchart LR
+    Norm["Norm"]
+    Norm --> L1
+    Norm --> L2
+    Norm --> Linf
+
     subgraph Norm Selection
         L1[L1 Norm]
         L2[L2 Norm]
@@ -122,6 +128,8 @@ flowchart LR
     L1 --> Char1 --> App1
     L2 --> Char2 --> App2
     Linf --> Char3 --> App3
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Norm currentTerm
 ```
 
 
@@ -184,6 +192,8 @@ graph LR
     
     TotalCost --> Opt[Optimizer Updates Weights]
     Opt --> Weights
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class NormCalc currentTerm
 ```
 
 - **Inner Product Spaces**: Norms define the geometric structure of inner product spaces (Hilbert spaces), where the L2 norm is derived from the inner product: $\|\mathbf{v}\|_2 = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$.

@@ -37,10 +37,13 @@ For example, with $p=0.5$, each activation has a one-half probability of being s
 
 ```mermaid
 flowchart LR
+    D[Dropout] --> M[Apply random mask during training]
     X[Activations] --> M[Apply random mask during training]
     M --> S[Scale retained activations]
     S --> T[Train network]
     X --> E[Use unchanged activations at evaluation]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class D currentTerm
 ```
 
 ## Interpretation

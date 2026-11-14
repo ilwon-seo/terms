@@ -50,6 +50,8 @@ The resulting value provides a geometric interpretation of the relationship betw
 
 ```mermaid
 flowchart LR
+    CosSim["Cosine Similarity"]
+
     subgraph Value [Cosine Value]
         V1[1.0]
         V2[0.0]
@@ -71,6 +73,11 @@ flowchart LR
     V1 --> G1 --> M1
     V2 --> G2 --> M2
     V3 --> G3 --> M3
+    CosSim --> V1
+    CosSim --> V2
+    CosSim --> V3
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class CosSim currentTerm
 ```
 
 ## Necessity
@@ -95,7 +102,8 @@ graph TD
     Set --> Jac[Jaccard Similarity]
     Prob --> KL[KL Divergence]
 
-    style Cos fill:#f9f,stroke:#333,stroke-width:2px
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Cos currentTerm
 ```
 
 ## Limitations and Alternatives
@@ -126,14 +134,16 @@ sequenceDiagram
     participant U as User Query
     participant E as Embedding Model
     participant DB as Vector Database
-    participant S as Cosine Similarity Calc
+    participant S as <b>Cosine Similarity</b>
     participant R as Results
 
     U->>E: Input "Mathematics"
     E->>E: Convert to Vector [0.1, 0.9, ...]
     E->>DB: Search Near Vectors
+    rect rgb(219, 234, 254)
     DB->>S: Compare Query Vector with Doc Vectors
     S->>S: Calculate cos(θ) for each pair
     S->>R: Rank by Highest Similarity
+    end
     R->>U: Return Top-K Documents
 ```

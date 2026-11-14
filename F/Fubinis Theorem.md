@@ -167,7 +167,7 @@ flowchart TD
     Integral["Double Integral over Region"]
     Order1["Integrate y first, then x"]
     Order2["Integrate x first, then y"]
-    Result1["Same value if conditions hold"]
+    Result1["Fubini's Theorem:<br/>same value if conditions hold"]
     Meaning["Volume / Accumulated Quantity"]
 
     Integral --> Order1
@@ -178,7 +178,8 @@ flowchart TD
 
     Result1 --> Meaning
 
-    style Result1 fill:#fff4dd,stroke:#d4a017
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Result1 currentTerm
 ```
 
 ## Necessity
@@ -242,6 +243,8 @@ graph LR
     Probability --> Marginal[Marginal Distributions]
     Probability --> Expected[Expected Values]
     Multiple --> Region[Change Order of Integration]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Fubini currentTerm
 ```
 
 ## Related Concepts

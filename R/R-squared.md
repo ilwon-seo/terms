@@ -80,6 +80,8 @@ flowchart LR
   residuals --> r2
   total --> r2
   r2 --> adjusted
+  classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+  class r2 currentTerm
 ```
 
 ## References

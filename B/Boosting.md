@@ -25,11 +25,14 @@ where $F_0$ is an initial prediction, $h_m$ is the learner added at iteration $m
 
 ```mermaid
 flowchart LR
-    Init[Initial model] --> Add1[Fit next learner]
+    Boost["Boosting"] --> Init[Initial model]
+    Init --> Add1[Fit next learner]
     Add1 --> Update1[Update ensemble]
     Update1 --> Add2[Fit learner to remaining errors]
     Add2 --> Update2[Update ensemble]
     Update2 --> Final[Combined model]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Boost currentTerm
 ```
 
 ## Calculation

@@ -73,6 +73,8 @@ flowchart LR
   predictors --> adjusted
   df --> adjusted
   adjusted --> compare["Comparing fitted regression models"]
+  classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+  class adjusted currentTerm
 ```
 
 ## References

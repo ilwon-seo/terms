@@ -78,6 +78,8 @@ flowchart LR
   clipping["Gradient-norm clipping"] --> bounded["Gradient norm limited"]
   large --> clipping
   bounded --> updates["More controlled update"]
+  classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+  class exploding currentTerm
 ```
 
 ## References

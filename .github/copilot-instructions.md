@@ -23,6 +23,16 @@ The project is documentation-first: there is no application runtime, build syste
 - For display expressions, prefer `$$` delimiters on their own lines, with the formula between them and blank lines separating the block from surrounding prose. GitHub also supports fenced `math` blocks without `$$`; use one block style consistently only when the site renderer supports it.
 - Prefer standard LaTeX/MathJax commands. For repository consistency, do not use `\operatorname{...}`; use `\text{...}` for words or named functions in formulas (for example, write `\text{sign}`).
 - Use Mermaid diagrams sparingly when they support explanation.
+- In every Mermaid diagram in a term entry, emphasize the current term with the shared style below; apply it to every diagram on that page, not only the concept map:
+
+  ```mermaid
+  flowchart LR
+      term["Current Term"]
+      classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+      class term currentTerm
+  ```
+
+- If a diagram does not already contain a node for the current term, add one or make an existing node clearly represent it without changing the diagram's meaning. For sequence diagrams, use a bold label for the current-term participant and a light-blue `rect rgb(219, 234, 254)` around its relevant interactions.
 
 ## Required document structure
 

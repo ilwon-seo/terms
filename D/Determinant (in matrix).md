@@ -210,6 +210,8 @@ flowchart TD
 
     style Nonzero fill:#eaf7ea,stroke:#2e7d32
     style Zero fill:#fff4dd,stroke:#d4a017
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Det currentTerm
 ```
 
 ## Necessity
@@ -264,6 +266,8 @@ graph LR
     Char --> Eigen["Eigenvalues"]
     Jacobian --> Change["Change of Variables"]
     Inv --> Systems["Unique Solution of Ax = b"]
+    classDef currentTerm fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1e3a8a,font-weight:bold
+    class Det currentTerm
 ```
 
 ## Related Concepts
