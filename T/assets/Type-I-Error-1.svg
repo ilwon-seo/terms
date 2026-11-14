@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title description">
+  <title id="title">Type I and Type II outcomes in hypothesis testing</title>
+  <desc id="description">A decision table with test decisions in rows and the true state of the null hypothesis in columns. Rejecting a true null hypothesis is a Type I error with probability alpha; failing to reject a false null hypothesis is a Type II error with probability beta.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .axis { font-size: 18px; font-weight: 700; }
+    .label { font-size: 16px; }
+    .cellname { font-size: 19px; font-weight: 700; }
+    .cellnote { font-size: 15px; }
+  </style>
+  <rect width="900" height="540" fill="#ffffff"/>
+  <text x="515" y="40" text-anchor="middle" font-size="25" font-weight="700">Decision outcomes in a hypothesis test</text>
+  <text x="515" y="68" text-anchor="middle" font-size="15" fill="#4b5563">Rows are test decisions; columns are the true state of the null hypothesis</text>
+
+  <text class="axis" x="540" y="115" text-anchor="middle">Actual state</text>
+  <text class="label" x="405" y="153" text-anchor="middle">H0 is true</text>
+  <text class="label" x="675" y="153" text-anchor="middle">H0 is false</text>
+  <text class="axis" x="100" y="327" text-anchor="middle" transform="rotate(-90 100 327)">Test decision</text>
+  <text class="label" x="220" y="252" text-anchor="middle">Do not reject</text>
+  <text class="label" x="220" y="390" text-anchor="middle">Reject H0</text>
+
+  <rect x="270" y="174" width="270" height="130" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+  <rect x="540" y="174" width="270" height="130" fill="#fff3df" stroke="#bd7a19" stroke-width="2"/>
+  <rect x="270" y="304" width="270" height="130" fill="#fff0eb" stroke="#bd573a" stroke-width="2"/>
+  <rect x="540" y="304" width="270" height="130" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+
+  <text class="cellname" x="405" y="225" text-anchor="middle">Correct decision</text>
+  <text class="cellnote" x="405" y="256" text-anchor="middle">Do not reject a true H0</text>
+
+  <text class="cellname" x="675" y="225" text-anchor="middle">Type II error</text>
+  <text class="cellnote" x="675" y="256" text-anchor="middle">Probability beta</text>
+  <text class="cellnote" x="675" y="279" text-anchor="middle">Do not reject a false H0</text>
+
+  <text class="cellname" x="405" y="355" text-anchor="middle">Type I error</text>
+  <text class="cellnote" x="405" y="386" text-anchor="middle">Probability alpha</text>
+  <text class="cellnote" x="405" y="409" text-anchor="middle">Reject a true H0</text>
+
+  <text class="cellname" x="675" y="355" text-anchor="middle">Correct rejection</text>
+  <text class="cellnote" x="675" y="386" text-anchor="middle">Power = 1 - beta</text>
+  <text class="cellnote" x="675" y="409" text-anchor="middle">Reject a false H0</text>
+
+  <text x="515" y="490" text-anchor="middle" font-size="15" font-weight="700" fill="#5b4b2f">Failing to reject H0 is not the same as proving H0 true.</text>
+</svg>

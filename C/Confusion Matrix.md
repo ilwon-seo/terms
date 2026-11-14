@@ -60,7 +60,7 @@ Overall accuracy can hide which kinds of errors a classifier makes. A confusion 
 ## Derived Subsequent Concepts
 
 - [**Classification Metrics**](./Classification%20Metrics.md): Metrics such as accuracy, precision, and recall are calculated from confusion-matrix counts.
-- **Type I Error:** In a hypothesis test, rejecting a true null hypothesis; in a matching binary-classification setup, this corresponds to a false positive.
+- [**Type I Error**](../T/Type%20I%20Error.md): In a hypothesis test, rejecting a true null hypothesis; in a matching binary-classification setup, this corresponds to a false positive.
 - **Type II Error:** In a hypothesis test, failing to reject a false null hypothesis; in a matching binary-classification setup, this corresponds to a false negative.
 - **Classification Threshold:** A score cutoff that determines predicted labels and can change the matrix.
 
