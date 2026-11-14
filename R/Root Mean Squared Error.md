@@ -51,12 +51,12 @@ RMSE is useful when a single error summary in the target's units is desired and 
 - **Sensitive to large errors:** Squaring gives unusually large residuals a strong influence; inspect residuals when outliers or rare large errors matter.
 - **Scale-dependent:** RMSE uses the target's units, so raw values are not generally comparable across targets with different units or scales.
 - **Not a complete description of errors:** The same RMSE can result from different residual patterns and does not indicate whether errors are systematically positive or negative.
-- **Alternatives express different priorities:** [MSE](../M/Mean%20Squared%20Error.md) keeps the squared scale, while [MAE](../R/Regression%20Metrics.md) weights absolute residuals linearly. [Regression Metrics](../R/Regression%20Metrics.md) compares these measures.
+- **Alternatives express different priorities:** [MSE](../M/Mean%20Squared%20Error.md) keeps the squared scale, while [MAE](../M/Mean%20Absolute%20Error.md) weights absolute residuals linearly. [Regression Metrics](./Regression%20Metrics.md) compares these measures.
 
 ## Derived Subsequent Concepts
 
 - [**Mean Squared Error (MSE)**](../M/Mean%20Squared%20Error.md): RMSE is the square root of this metric.
-- [**Mean Absolute Error (MAE)**](../R/Regression%20Metrics.md): A linear-in-error alternative.
+- [**Mean Absolute Error (MAE)**](../M/Mean%20Absolute%20Error.md): A linear-in-error alternative.
 - [**Regression Metrics**](../R/Regression%20Metrics.md): Compares RMSE with other measures of regression performance.
 - [**Regression**](./Regression.md): The quantitative prediction task RMSE can evaluate.
 

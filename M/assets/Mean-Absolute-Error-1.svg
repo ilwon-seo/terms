@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title description">
+  <title id="title">Absolute and squared error contributions</title>
+  <desc id="description">A conceptual plot compares absolute residual magnitude, which grows linearly, with squared residual magnitude, which grows quadratically. The squared penalty becomes larger for residual magnitudes greater than one.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .label { font-size: 15px; }
+    .small { font-size: 13px; fill: #4b5563; }
+    .grid { stroke: #e5e7eb; stroke-width: 1; }
+  </style>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-weight="700">How absolute and squared penalties grow</text>
+  <text x="450" y="63" text-anchor="middle" font-size="14" fill="#4b5563">Per-observation contribution as the residual magnitude increases</text>
+
+  <g class="grid">
+    <line x1="120" y1="440" x2="760" y2="440"/>
+    <line x1="120" y1="373.3" x2="760" y2="373.3"/>
+    <line x1="120" y1="306.7" x2="760" y2="306.7"/>
+    <line x1="120" y1="240" x2="760" y2="240"/>
+    <line x1="120" y1="173.3" x2="760" y2="173.3"/>
+    <line x1="120" y1="140" x2="120" y2="440"/>
+    <line x1="333.3" y1="140" x2="333.3" y2="440"/>
+    <line x1="546.7" y1="140" x2="546.7" y2="440"/>
+    <line x1="760" y1="140" x2="760" y2="440"/>
+  </g>
+  <g stroke="#374151" stroke-width="1.5">
+    <line x1="120" y1="140" x2="120" y2="440"/>
+    <line x1="120" y1="440" x2="760" y2="440"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="120" y="462">0</text>
+    <text x="333.3" y="462">1</text>
+    <text x="546.7" y="462">2</text>
+    <text x="760" y="462">3</text>
+  </g>
+  <g class="small" text-anchor="end">
+    <text x="108" y="444">0</text>
+    <text x="108" y="377">2</text>
+    <text x="108" y="310">4</text>
+    <text x="108" y="244">6</text>
+    <text x="108" y="177">8</text>
+    <text x="108" y="144">9</text>
+  </g>
+  <text class="label" x="440" y="500" text-anchor="middle">Absolute residual magnitude |e|</text>
+  <text class="label" x="40" y="290" transform="rotate(-90 40 290)" text-anchor="middle">Per-observation penalty</text>
+
+  <path d="M120 440 L760 340" fill="none" stroke="#0072B2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 440 Q226.7 436.7 333.3 406.7 T546.7 306.7 T760 140" fill="none" stroke="#d55e00" stroke-width="4" stroke-linecap="round"/>
+
+  <g>
+    <line x1="620" y1="96" x2="665" y2="96" stroke="#0072B2" stroke-width="4"/>
+    <text class="small" x="675" y="101">Absolute: |e|</text>
+    <line x1="620" y1="120" x2="665" y2="120" stroke="#d55e00" stroke-width="4"/>
+    <text class="small" x="675" y="125">Squared: e²</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="2">
+    <circle cx="333.3" cy="406.7" r="5" fill="#202124"/>
+    <circle cx="546.7" cy="373.3" r="5" fill="#0072B2"/>
+    <circle cx="546.7" cy="306.7" r="5" fill="#d55e00"/>
+  </g>
+  <text class="small" x="342" y="399">At |e| = 1, both contribute 1</text>
+  <text class="small" x="555" y="299">At |e| = 2, absolute = 2; squared = 4</text>
+  <text class="small" x="440" y="535" text-anchor="middle">Conceptual curves; not a dataset or model evaluation.</text>
+</svg>

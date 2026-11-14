@@ -54,7 +54,7 @@ MSE provides a single score that penalizes large prediction errors strongly. It 
 - **Sensitivity to outliers:** A few large residuals can dominate the mean squared error, whether those observations are unusual, erroneous, or genuinely costly.
 - **Squared units:** The score does not use the target's original units, which can make its size harder to explain.
 - **Scale dependence:** MSE values are not generally comparable across targets with different units or scales.
-- **Alternatives express different priorities:** [Regression Metrics](../R/Regression%20Metrics.md) compares MSE with MAE, which penalizes error magnitude linearly, and RMSE, which is in target units but retains squared-error sensitivity.
+- **Alternatives express different priorities:** [Mean Absolute Error (MAE)](./Mean%20Absolute%20Error.md) penalizes error magnitude linearly; [RMSE](../R/Root%20Mean%20Squared%20Error.md) is in target units but retains squared-error sensitivity.
 - **The average hides individual errors:** Report or inspect residuals when large errors or systematic patterns matter.
 
 ## Derived Subsequent Concepts
@@ -62,7 +62,7 @@ MSE provides a single score that penalizes large prediction errors strongly. It 
 - [**Regression Metrics**](../R/Regression%20Metrics.md): Compares MSE with other measures of regression performance.
 - [**Regression**](../R/Regression.md): The quantitative prediction task in which MSE is often used.
 - [**Root Mean Squared Error (RMSE)**](../R/Root%20Mean%20Squared%20Error.md): Expresses the square root of MSE in the target's units.
-- **Mean Absolute Error (MAE):** A linear-in-error alternative to MSE.
+- [**Mean Absolute Error (MAE)**](./Mean%20Absolute%20Error.md): A linear-in-error alternative to MSE.
 
 ## References
 
