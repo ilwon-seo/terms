@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title description">
+  <title id="title">Different group fairness criteria can give different results</title>
+  <desc id="description">In a hypothetical example, two groups have equal positive-decision rates of 0.50, satisfying demographic parity, but true-positive rates of 0.80 and 0.60, which do not satisfy equal opportunity.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #4b5563; }
+    .heading { font-size: 17px; font-weight: 700; }
+    .label { font-size: 14px; }
+    .value { font-size: 13px; font-weight: 700; }
+    .note { font-size: 13px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text class="title" x="450" y="38" text-anchor="middle">A fairness assessment depends on the criterion</text>
+  <text class="subtitle" x="450" y="63" text-anchor="middle">Hypothetical group rates for a binary classification task</text>
+
+  <rect x="40" y="90" width="395" height="300" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+  <rect x="465" y="90" width="395" height="300" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+
+  <text class="heading" x="237.5" y="123" text-anchor="middle">Demographic parity</text>
+  <text class="subtitle" x="237.5" y="146" text-anchor="middle">Positive-decision rate</text>
+  <text class="heading" x="662.5" y="123" text-anchor="middle">Equal opportunity</text>
+  <text class="subtitle" x="662.5" y="146" text-anchor="middle">True-positive rate (among Y = 1)</text>
+
+  <text class="label" x="72" y="199">Group A</text>
+  <text class="label" x="72" y="269">Group B</text>
+  <text class="label" x="497" y="199">Group A</text>
+  <text class="label" x="497" y="269">Group B</text>
+
+  <rect x="160" y="177" width="200" height="30" rx="4" fill="#2563eb"/>
+  <text class="value" x="369" y="197">0.50</text>
+  <rect x="160" y="247" width="200" height="30" rx="4" fill="#f97316"/>
+  <text class="value" x="369" y="267">0.50</text>
+
+  <rect x="585" y="177" width="240" height="30" rx="4" fill="#2563eb"/>
+  <text class="value" x="817" y="197" text-anchor="end">0.80</text>
+  <rect x="585" y="247" width="180" height="30" rx="4" fill="#f97316"/>
+  <text class="value" x="777" y="267">0.60</text>
+
+  <text class="label" x="237.5" y="330" text-anchor="middle" fill="#166534">Equal rates in this example</text>
+  <text class="label" x="662.5" y="330" text-anchor="middle" fill="#b91c1c">Unequal rates in this example</text>
+  <text class="note" x="450" y="426" text-anchor="middle">One criterion can hold while another does not; neither panel alone determines overall fairness.</text>
+  <text class="note" x="450" y="454" text-anchor="middle">The values are illustrative, not measured from a real model or population.</text>
+</svg>
