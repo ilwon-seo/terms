@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" role="img" aria-labelledby="title description">
+  <title id="title">Illustrative permutation feature importance</title>
+  <desc id="description">On a held-out set with baseline accuracy 0.84, shuffling Feature A, B, and C reduces mean accuracy by 0.12, 0.05, and 0.01 respectively. The values are hypothetical.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #4b5563; }
+    .label { font-size: 15px; }
+    .value { font-size: 14px; font-weight: 700; }
+    .tick { font-size: 12px; fill: #4b5563; }
+    .note { font-size: 13px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text class="title" x="450" y="36" text-anchor="middle">Permutation importance measures a score drop</text>
+  <text class="subtitle" x="450" y="60" text-anchor="middle">Hypothetical validation accuracy; baseline score = 0.84</text>
+
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="250" y1="100" x2="250" y2="340"/>
+    <line x1="450" y1="100" x2="450" y2="340"/>
+    <line x1="650" y1="100" x2="650" y2="340"/>
+    <line x1="850" y1="100" x2="850" y2="340"/>
+  </g>
+
+  <text class="label" x="80" y="155">Feature A</text>
+  <text class="label" x="80" y="235">Feature B</text>
+  <text class="label" x="80" y="315">Feature C</text>
+
+  <rect x="250" y="128" width="480" height="38" rx="4" fill="#2563eb"/>
+  <text class="value" x="742" y="153">0.12</text>
+  <rect x="250" y="208" width="200" height="38" rx="4" fill="#3b82f6"/>
+  <text class="value" x="462" y="233">0.05</text>
+  <rect x="250" y="288" width="40" height="38" rx="4" fill="#93c5fd"/>
+  <text class="value" x="302" y="313">0.01</text>
+
+  <line x1="250" y1="350" x2="850" y2="350" stroke="#64748b" stroke-width="1.5"/>
+  <g class="tick" text-anchor="middle">
+    <text x="250" y="374">0.00</text>
+    <text x="450" y="374">0.05</text>
+    <text x="650" y="374">0.10</text>
+    <text x="850" y="374">0.15</text>
+  </g>
+  <text class="note" x="450" y="416" text-anchor="middle">Importance = baseline accuracy - mean accuracy after shuffling a feature</text>
+  <text class="note" x="450" y="444" text-anchor="middle">Larger score drops indicate greater reliance by this fitted model on this dataset.</text>
+</svg>
