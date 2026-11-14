@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title description">
+  <title id="title">Illustration of a vanishing gradient</title>
+  <desc id="description">During backpropagation through a simple three-layer scalar chain, an output gradient of 1 is multiplied by a local derivative of 0.1 at each layer, becoming 0.1, then 0.01, then 0.001 at an early layer.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+      .title { font-size: 23px; font-weight: 700; }
+      .subtitle { font-size: 14px; fill: #4b5563; }
+      .node-title { font-size: 14px; font-weight: 700; }
+      .value { font-size: 21px; font-weight: 700; }
+      .step { font-size: 13px; fill: #4b5563; }
+      .formula { font-size: 16px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="900" height="360" fill="#ffffff"/>
+  <text class="title" x="450" y="38" text-anchor="middle">Repeated small derivatives shrink backward gradients</text>
+  <text class="subtitle" x="450" y="64" text-anchor="middle">Illustrative scalar chain: each local derivative is 0.1</text>
+
+  <g fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5">
+    <rect x="35" y="112" width="175" height="105" rx="12"/>
+    <rect x="260" y="112" width="175" height="105" rx="12"/>
+    <rect x="485" y="112" width="175" height="105" rx="12"/>
+    <rect x="710" y="112" width="155" height="105" rx="12"/>
+  </g>
+  <g text-anchor="middle">
+    <text class="node-title" x="122" y="141">Output gradient</text>
+    <text class="value" x="122" y="177">1</text>
+    <text class="subtitle" x="122" y="199">∂L/∂h₃</text>
+
+    <text class="node-title" x="347" y="141">After 1 layer</text>
+    <text class="value" x="347" y="177">0.1</text>
+    <text class="subtitle" x="347" y="199">∂L/∂h₂</text>
+
+    <text class="node-title" x="572" y="141">After 2 layers</text>
+    <text class="value" x="572" y="177">0.01</text>
+    <text class="subtitle" x="572" y="199">∂L/∂h₁</text>
+
+    <text class="node-title" x="787" y="141">Early layer</text>
+    <text class="value" x="787" y="177">0.001</text>
+    <text class="subtitle" x="787" y="199">∂L/∂h₀</text>
+  </g>
+
+  <g stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="210" y1="164" x2="250" y2="164"/>
+    <line x1="435" y1="164" x2="475" y2="164"/>
+    <line x1="660" y1="164" x2="700" y2="164"/>
+  </g>
+  <g class="step" text-anchor="middle">
+    <text x="230" y="235">× 0.1</text>
+    <text x="455" y="235">× 0.1</text>
+    <text x="680" y="235">× 0.1</text>
+  </g>
+  <text class="subtitle" x="450" y="276" text-anchor="middle">Backpropagation direction: output → earlier layers</text>
+  <text class="formula" x="450" y="318" text-anchor="middle">1 × 0.1 × 0.1 × 0.1 = 0.001</text>
+</svg>

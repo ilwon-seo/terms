@@ -71,7 +71,7 @@ Without the sigmoid function, binary classification models would lack a natural 
 ## Limitations and Alternatives
 
 Despite its usefulness, the sigmoid function has limitations:
-- **Vanishing Gradient**: For large positive or negative inputs, the gradient approaches zero, slowing down training in deep networks.
+- **[Vanishing Gradient](../V/Vanishing%20Gradient.md)**: For large positive or negative inputs, the gradient approaches zero, slowing down training in deep networks.
 - **Not Zero-Centered**: Outputs are always positive, which can cause issues in optimization algorithms.
 - **Computational Cost**: Involves exponential computation, which can be slower than simpler functions.
 - **Saturation**: Extreme inputs lead to saturation, reducing sensitivity to changes.
