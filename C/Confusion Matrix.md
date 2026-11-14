@@ -34,7 +34,7 @@ $$
 C_{ij} = \left|\{k : y_k=i,\ \hat{y}_k=j\}\right|.
 $$
 
-With the row-actual, column-predicted convention, the diagonal contains correct predictions and off-diagonal cells contain errors. For binary classification, TP, TN, FP, and FN can be used to calculate [accuracy](../A/Accuracy.md), precision, recall, and other metrics [1, 2].
+With the row-actual, column-predicted convention, the diagonal contains correct predictions and off-diagonal cells contain errors. For binary classification, TP, TN, FP, and FN can be used to calculate [accuracy](../A/Accuracy.md), [precision](../P/Precision.md), recall, and other metrics [1, 2].
 
 ## Interpretation
 

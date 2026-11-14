@@ -55,7 +55,7 @@ Checking class frequencies helps interpret evaluation results and decide which [
 - [**Accuracy**](../A/Accuracy.md): Overall correctness can be misleading when class frequencies are highly unequal.
 - [**Classification Metrics**](./Classification%20Metrics.md): The choice of metric should reflect class frequencies and error costs.
 - [**Confusion Matrix**](./Confusion%20Matrix.md): Separates prediction outcomes by actual and predicted class.
-- **Precision and Recall:** Class-specific metrics that describe different positive-class errors.
+- [**Precision**](../P/Precision.md) and **Recall:** Class-specific metrics that describe different positive-class errors.
 - **Balanced Accuracy:** The average of recall across classes [2].
 
 ## References

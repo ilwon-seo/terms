@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title description">
+  <title id="title">Precision from positive predictions</title>
+  <desc id="description">In an illustrative set of 10 positive predictions, 8 are true positives and 2 are false positives. Precision is 8 divided by 10, or 80 percent.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .label { font-size: 17px; }
+    .strong { font-size: 21px; font-weight: 700; }
+    .small { font-size: 15px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="430" fill="#ffffff"/>
+  <text x="450" y="42" text-anchor="middle" font-size="25" font-weight="700">Precision evaluates positive predictions</text>
+  <text x="450" y="72" text-anchor="middle" font-size="15" fill="#4b5563">Illustrative example — 10 positive predictions, not measured data</text>
+
+  <text class="label" x="450" y="133" text-anchor="middle">Predicted positive: 10 cases</text>
+  <rect x="150" y="157" width="480" height="78" rx="8" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+  <rect x="630" y="157" width="120" height="78" rx="8" fill="#fff3df" stroke="#bd7a19" stroke-width="2"/>
+  <text class="strong" x="390" y="190" text-anchor="middle">8 true positives (TP)</text>
+  <text class="small" x="390" y="216" text-anchor="middle">actually positive</text>
+  <text class="strong" x="690" y="190" text-anchor="middle">2 FP</text>
+  <text class="small" x="690" y="216" text-anchor="middle">false alarms</text>
+
+  <text class="label" x="450" y="282" text-anchor="middle">Precision = correct positive predictions / all positive predictions</text>
+  <text x="450" y="334" text-anchor="middle" font-size="28" font-weight="700" fill="#28613a">8 / (8 + 2) = 80%</text>
+  <text class="small" x="450" y="382" text-anchor="middle">The denominator includes both true and false positives.</text>
+</svg>
