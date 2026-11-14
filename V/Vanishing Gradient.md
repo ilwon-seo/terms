@@ -48,13 +48,13 @@ Checking gradient magnitudes across layers can help diagnose why a deep network 
 - **A small gradient is not always a failure:** Gradient size depends on the model, data, loss, and training state; interpret it alongside learning progress and other diagnostics.
 - **Depth is not the only factor:** Activation derivatives and the scale of layer transformations affect how gradients propagate [1].
 - **Initialization and activation choices can help:** Initialization designed for a network's activation function can help preserve signal and gradient scales. Rectifier-based networks use initialization methods tailored to rectifier activations [1, 2].
-- **It differs from exploding gradients:** Vanishing gradients shrink during backpropagation; exploding gradients grow excessively.
+- **It differs from [Exploding Gradient](../E/Exploding%20Gradient.md):** Vanishing gradients shrink during backpropagation; exploding gradients grow excessively.
 
 ## Derived Subsequent Concepts
 
 - [**Sigmoid Function**](../S/Sigmoid%20function.md): Its derivative approaches zero in saturated regions, which can contribute to vanishing gradients.
 - **Backpropagation:** The chain-rule procedure that propagates loss gradients from output layers toward earlier layers.
-- **Exploding Gradient:** The contrasting problem in which backpropagated gradients grow excessively.
+- [**Exploding Gradient**](../E/Exploding%20Gradient.md): The contrasting problem in which backpropagated gradients grow excessively.
 - **Weight Initialization:** The choice of initial parameter values, which influences signal and gradient scales through a network.
 
 The concept map shows factors that can contribute to vanishing gradients and a common training consequence:
