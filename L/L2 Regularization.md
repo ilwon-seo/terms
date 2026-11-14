@@ -32,11 +32,7 @@ $$
 For ridge regression with design matrix $X$, response vector $\mathbf{y}$, and $n$ observations, one common convention is:
 
 $$
-\min_{\mathbf{w}}
-\left[
-\frac{1}{2n}\sum_{i=1}^{n}(\mathbf{x}_i^\top\mathbf{w}-y_i)^2
-+ \lambda\sum_{j=1}^{d}w_j^2
-\right].
+\min_{\mathbf{w}} \left(\frac{1}{2n}\sum_{i=1}^{n}(\mathbf{x}_i^\top\mathbf{w}-y_i)^2 + \lambda\sum_{j=1}^{d}w_j^2\right).
 $$
 
 Here, $\mathbf{x}_i^\top$ is the $i$th row of $X$.
