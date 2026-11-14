@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="530" viewBox="0 0 1120 530" role="img" aria-labelledby="title description">
+  <title id="title">Classification evaluation depends on threshold and task</title>
+  <desc id="description">A conceptual workflow: a classifier produces scores, a threshold turns scores into labels, and predicted labels are evaluated with metrics selected to match task goals and error costs. ROC-AUC instead summarizes ranking across thresholds.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#435466"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+      .box { stroke-width: 2; rx: 12; }
+      .heading { font-size: 19px; font-weight: 700; }
+      .detail { font-size: 15px; fill: #3f4b57; }
+      .arrow { fill: none; stroke: #435466; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1120" height="530" fill="#ffffff"/>
+  <text x="560" y="40" text-anchor="middle" font-size="25" font-weight="700">Choose metrics for the decision, not by habit</text>
+  <text x="560" y="68" text-anchor="middle" font-size="15" fill="#4b5563">Conceptual workflow — label-based metrics depend on the chosen threshold</text>
+
+  <rect class="box" x="55" y="120" width="220" height="105" fill="#eaf2fb" stroke="#3973ac"/>
+  <text class="heading" x="165" y="159" text-anchor="middle">Classifier scores</text>
+  <text class="detail" x="165" y="188" text-anchor="middle">e.g., positive-class scores</text>
+
+  <rect class="box" x="350" y="120" width="220" height="105" fill="#f3effa" stroke="#7856a6"/>
+  <text class="heading" x="460" y="159" text-anchor="middle">Decision threshold</text>
+  <text class="detail" x="460" y="188" text-anchor="middle">turn scores into labels</text>
+
+  <rect class="box" x="645" y="120" width="220" height="105" fill="#fff3df" stroke="#bd7a19"/>
+  <text class="heading" x="755" y="159" text-anchor="middle">Compare labels</text>
+  <text class="detail" x="755" y="188" text-anchor="middle">with the actual classes</text>
+
+  <rect class="box" x="940" y="120" width="145" height="105" fill="#e8f4ec" stroke="#3b8053"/>
+  <text class="heading" x="1012" y="159" text-anchor="middle">Counts</text>
+  <text class="detail" x="1012" y="188" text-anchor="middle">TP, TN, FP, FN</text>
+
+  <path class="arrow" d="M275 172 H342"/>
+  <path class="arrow" d="M570 172 H637"/>
+  <path class="arrow" d="M865 172 H932"/>
+
+  <text x="560" y="278" text-anchor="middle" font-size="19" font-weight="700">Select the metric that reflects the cost of errors</text>
+  <rect class="box" x="55" y="310" width="190" height="105" fill="#f6f7f9" stroke="#667788"/>
+  <rect class="box" x="265" y="310" width="190" height="105" fill="#f6f7f9" stroke="#667788"/>
+  <rect class="box" x="475" y="310" width="190" height="105" fill="#f6f7f9" stroke="#667788"/>
+  <rect class="box" x="685" y="310" width="190" height="105" fill="#f6f7f9" stroke="#667788"/>
+  <rect class="box" x="895" y="310" width="190" height="105" fill="#eaf2fb" stroke="#3973ac"/>
+
+  <text class="heading" x="150" y="349" text-anchor="middle">Accuracy</text>
+  <text class="detail" x="150" y="378" text-anchor="middle">overall correctness</text>
+  <text class="heading" x="360" y="349" text-anchor="middle">Precision</text>
+  <text class="detail" x="360" y="378" text-anchor="middle">limit false alarms</text>
+  <text class="heading" x="570" y="349" text-anchor="middle">Recall</text>
+  <text class="detail" x="570" y="378" text-anchor="middle">limit missed positives</text>
+  <text class="heading" x="780" y="349" text-anchor="middle">F1</text>
+  <text class="detail" x="780" y="378" text-anchor="middle">summarize precision/recall</text>
+  <text class="heading" x="990" y="349" text-anchor="middle">ROC-AUC</text>
+  <text class="detail" x="990" y="378" text-anchor="middle">ranking across thresholds</text>
+
+  <text x="560" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#5b4b2f">No single metric captures every error cost or class distribution.</text>
+</svg>
