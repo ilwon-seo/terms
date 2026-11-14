@@ -79,7 +79,7 @@ This order should be preserved unless the concept genuinely requires a different
 - Preserve the author/date metadata format when editing existing files.
 - When adding a new term, create the appropriate letter-named directory and use a clear filename.
 - When an image is needed, store it in an `assets/` directory inside the term's letter directory (for example, `N/assets/`). Name each image with the entry name and a sequential number, such as `Norm (mathematics)-1.png`.
-- Cite each image's source in a body footnote, and reference the image from the term page with a Markdown relative path (for example, `![Description](<./assets/Norm (mathematics)-1.png>)` when the assets directory is next to the term page).
+- Cite each image with a visible source note or reference immediately beside it, and use a Markdown relative path for the image (for example, `![Description](<./assets/Norm (mathematics)-1.png>)` when the assets directory is next to the term page). Use footnote syntax only after verifying that the site's renderer supports it.
 
 ## Validation
 
@@ -92,7 +92,7 @@ For a practical validation step before finishing:
 - verify headings and math/diagram syntax are correctly formatted, including paired inline delimiters and display-math delimiters on separate lines,
 - verify inline math uses standard `$...$` delimiters without surrounding Markdown code backticks, and check it in the site's actual renderer,
 - follow the repository's formula convention: avoid `\operatorname{...}` and use `\text{...}` for words or named functions,
-- verify image links use relative paths and each image has a source citation in a body footnote,
+- verify image links use relative paths and each image has an adjacent source note or citation supported by the site's renderer,
 - confirm the new or edited content fits the existing repo conventions.
 
 If a change adds a new term, make sure its name, directory, and structure align with the established pattern used by neighboring files.
