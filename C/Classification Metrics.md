@@ -15,7 +15,7 @@ mermaid: true
 
 Classification metrics are quantitative measures used to assess a classifier's predictions. Different metrics emphasize different outcomes, so the appropriate choice depends on the task, the cost of errors, class frequencies, and whether evaluation concerns predicted labels or probability scores [1, 2].
 
-For binary classification, many label-based metrics are calculated from the four counts in a confusion matrix: true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN).
+For binary classification, many label-based metrics are calculated from the four counts in a [confusion matrix](./Confusion%20Matrix.md): true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN).
 
 ## Calculation
 
@@ -66,7 +66,7 @@ Metric selection should reflect how predictions will be used. Accuracy can be in
 
 ## Derived Subsequent Concepts
 
-- **Confusion Matrix:** The table of actual versus predicted classes from which many label-based classification metrics are calculated.
+- [**Confusion Matrix**](./Confusion%20Matrix.md): The table of actual versus predicted classes from which many label-based classification metrics are calculated.
 - **Accuracy:** The fraction of predictions that are correct.
 - **Precision:** The fraction of predicted positives that are truly positive.
 - **Recall:** The fraction of actual positives that are correctly identified.

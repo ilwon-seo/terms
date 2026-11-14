@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="570" viewBox="0 0 900 570" role="img" aria-labelledby="title description">
+  <title id="title">Binary confusion matrix with actual classes in rows</title>
+  <desc id="description">A two-by-two confusion matrix. Rows are actual classes and columns are predicted classes. True negatives and true positives are correct classifications; false positives and false negatives are errors.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .axis { font-size: 19px; font-weight: 700; }
+    .label { font-size: 16px; }
+    .cellname { font-size: 22px; font-weight: 700; }
+    .cellnote { font-size: 15px; }
+  </style>
+  <rect width="900" height="570" fill="#ffffff"/>
+  <text x="510" y="40" text-anchor="middle" font-size="25" font-weight="700">Binary confusion matrix</text>
+  <text x="510" y="68" text-anchor="middle" font-size="15" fill="#4b5563">Rows are actual classes; columns are predicted classes</text>
+
+  <text class="axis" x="555" y="113" text-anchor="middle">Predicted class</text>
+  <text class="label" x="418" y="151" text-anchor="middle">Negative (0)</text>
+  <text class="label" x="692" y="151" text-anchor="middle">Positive (1)</text>
+  <text class="axis" x="105" y="327" text-anchor="middle" transform="rotate(-90 105 327)">Actual class</text>
+  <text class="label" x="222" y="253" text-anchor="middle">Negative (0)</text>
+  <text class="label" x="222" y="393" text-anchor="middle">Positive (1)</text>
+
+  <rect x="290" y="171" width="255" height="130" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+  <rect x="545" y="171" width="255" height="130" fill="#fff0eb" stroke="#bd573a" stroke-width="2"/>
+  <rect x="290" y="301" width="255" height="130" fill="#fff3df" stroke="#bd7a19" stroke-width="2"/>
+  <rect x="545" y="301" width="255" height="130" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+
+  <text class="cellname" x="417" y="222" text-anchor="middle">TN</text>
+  <text class="cellnote" x="417" y="252" text-anchor="middle">True negative</text>
+  <text class="cellnote" x="417" y="275" text-anchor="middle">correct negative</text>
+
+  <text class="cellname" x="672" y="222" text-anchor="middle">FP</text>
+  <text class="cellnote" x="672" y="252" text-anchor="middle">False positive</text>
+  <text class="cellnote" x="672" y="275" text-anchor="middle">negative predicted positive</text>
+
+  <text class="cellname" x="417" y="352" text-anchor="middle">FN</text>
+  <text class="cellnote" x="417" y="382" text-anchor="middle">False negative</text>
+  <text class="cellnote" x="417" y="405" text-anchor="middle">positive predicted negative</text>
+
+  <text class="cellname" x="672" y="352" text-anchor="middle">TP</text>
+  <text class="cellnote" x="672" y="382" text-anchor="middle">True positive</text>
+  <text class="cellnote" x="672" y="405" text-anchor="middle">correct positive</text>
+
+  <rect x="318" y="472" width="18" height="18" rx="3" fill="#e8f4ec" stroke="#3b8053"/>
+  <text class="label" x="345" y="487">Correct classification</text>
+  <rect x="545" y="472" width="18" height="18" rx="3" fill="#fff0eb" stroke="#bd573a"/>
+  <text class="label" x="572" y="487">Misclassification</text>
+  <text x="510" y="530" text-anchor="middle" font-size="14" fill="#4b5563">Class labels and axis orientation should always be stated.</text>
+</svg>
