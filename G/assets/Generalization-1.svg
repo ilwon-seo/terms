@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="570" viewBox="0 0 1100 570" role="img" aria-labelledby="title description">
+  <title id="title">Estimating generalization with an independent test sample</title>
+  <desc id="description">A conceptual flow diagram: training data are used to fit a model, while a separate test sample from the target distribution is evaluated with that fixed model. The average test loss estimates population risk.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#435466"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+      .box { stroke-width: 2; rx: 12; }
+      .label { font-size: 19px; font-weight: 700; }
+      .detail { font-size: 15px; fill: #3f4b57; }
+      .arrow { fill: none; stroke: #435466; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1100" height="570" fill="#ffffff"/>
+  <text x="550" y="42" text-anchor="middle" font-size="25" font-weight="700">Estimating generalization performance</text>
+  <text x="550" y="70" text-anchor="middle" font-size="15" fill="#4b5563">Conceptual workflow — the test sample is separate from the data used to fit the model</text>
+
+  <rect class="box" x="55" y="130" width="240" height="115" fill="#eaf2fb" stroke="#3973ac"/>
+  <text class="label" x="175" y="169" text-anchor="middle">Training sample</text>
+  <text class="detail" x="175" y="198" text-anchor="middle">D drawn from target</text>
+  <text class="detail" x="175" y="220" text-anchor="middle">distribution P</text>
+
+  <rect class="box" x="390" y="130" width="250" height="115" fill="#f3effa" stroke="#7856a6"/>
+  <text class="label" x="515" y="169" text-anchor="middle">Fit the model</text>
+  <text class="detail" x="515" y="198" text-anchor="middle">Use D to obtain</text>
+  <text class="detail" x="515" y="220" text-anchor="middle">a model fitted using D</text>
+
+  <rect class="box" x="780" y="130" width="265" height="115" fill="#eaf2fb" stroke="#3973ac"/>
+  <text class="label" x="912" y="169" text-anchor="middle">Fixed fitted model</text>
+  <text class="detail" x="912" y="198" text-anchor="middle">Do not refit or select</text>
+  <text class="detail" x="912" y="220" text-anchor="middle">using the test sample</text>
+
+  <path class="arrow" d="M295 187 H382"/>
+  <path class="arrow" d="M640 187 H772"/>
+
+  <rect class="box" x="55" y="345" width="270" height="115" fill="#fff3df" stroke="#bd7a19"/>
+  <text class="label" x="190" y="384" text-anchor="middle">Independent test sample</text>
+  <text class="detail" x="190" y="413" text-anchor="middle">m fresh observations</text>
+  <text class="detail" x="190" y="435" text-anchor="middle">from the same target P</text>
+
+  <rect class="box" x="440" y="345" width="265" height="115" fill="#e8f4ec" stroke="#3b8053"/>
+  <text class="label" x="572" y="384" text-anchor="middle">Evaluate test losses</text>
+  <text class="detail" x="572" y="413" text-anchor="middle">Compare predictions</text>
+  <text class="detail" x="572" y="435" text-anchor="middle">with observed outcomes</text>
+
+  <rect class="box" x="820" y="345" width="225" height="115" fill="#e8f4ec" stroke="#3b8053"/>
+  <text class="label" x="932" y="384" text-anchor="middle">Average loss</text>
+  <text class="detail" x="932" y="413" text-anchor="middle">Test risk estimate</text>
+  <text class="detail" x="932" y="435" text-anchor="middle">of population risk</text>
+
+  <path class="arrow" d="M325 402 H432"/>
+  <path class="arrow" d="M705 402 H812"/>
+  <path class="arrow" d="M912 245 V300 H572 V337"/>
+
+  <text x="550" y="510" text-anchor="middle" font-size="16" font-weight="700" fill="#5b4b2f">The test average estimates population risk; finite samples make the estimate uncertain.</text>
+</svg>
