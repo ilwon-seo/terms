@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" viewBox="0 0 900 580" role="img" aria-labelledby="title description">
+  <title id="title">R-squared compares two sums of squares</title>
+  <desc id="description">For four observed targets, one row calculates total squared deviations from their mean, giving 29.1875. Another calculates squared residuals from predictions, giving 1.5. R-squared is one minus their ratio, approximately 0.9486.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .head { font-size: 16px; font-weight: 700; }
+    .label { font-size: 14px; }
+    .values { font-size: 15px; }
+    .small { font-size: 13px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="580" fill="#ffffff"/>
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-weight="700">R-squared compares model error with a mean baseline</text>
+  <text x="450" y="63" text-anchor="middle" font-size="14" fill="#4b5563">Worked example using values documented by scikit-learn</text>
+
+  <rect x="45" y="95" width="810" height="160" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="head" x="70" y="125">Total variation around the observed mean</text>
+  <text class="small" x="70" y="151">Observed y</text>
+  <text class="values" x="250" y="151" text-anchor="middle">3</text>
+  <text class="values" x="390" y="151" text-anchor="middle">−0.5</text>
+  <text class="values" x="530" y="151" text-anchor="middle">2</text>
+  <text class="values" x="670" y="151" text-anchor="middle">7</text>
+  <text class="small" x="70" y="181">Mean ȳ = 2.875</text>
+  <text class="small" x="70" y="211">Squared deviations (y − ȳ)²</text>
+  <text class="values" x="250" y="211" text-anchor="middle">0.0156</text>
+  <text class="values" x="390" y="211" text-anchor="middle">11.3906</text>
+  <text class="values" x="530" y="211" text-anchor="middle">0.7656</text>
+  <text class="values" x="670" y="211" text-anchor="middle">17.0156</text>
+  <text class="head" x="805" y="181" text-anchor="end" fill="#075985">SST = 29.1875</text>
+
+  <rect x="45" y="275" width="810" height="160" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text class="head" x="70" y="305">Residual error from model predictions</text>
+  <text class="small" x="70" y="331">Observed y</text>
+  <text class="values" x="250" y="331" text-anchor="middle">3</text>
+  <text class="values" x="390" y="331" text-anchor="middle">−0.5</text>
+  <text class="values" x="530" y="331" text-anchor="middle">2</text>
+  <text class="values" x="670" y="331" text-anchor="middle">7</text>
+  <text class="small" x="70" y="361">Prediction ŷ</text>
+  <text class="values" x="250" y="361" text-anchor="middle">2.5</text>
+  <text class="values" x="390" y="361" text-anchor="middle">0</text>
+  <text class="values" x="530" y="361" text-anchor="middle">2</text>
+  <text class="values" x="670" y="361" text-anchor="middle">8</text>
+  <text class="small" x="70" y="401">Squared residuals (y − ŷ)²</text>
+  <text class="values" x="250" y="401" text-anchor="middle">0.25</text>
+  <text class="values" x="390" y="401" text-anchor="middle">0.25</text>
+  <text class="values" x="530" y="401" text-anchor="middle">0</text>
+  <text class="values" x="670" y="401" text-anchor="middle">1</text>
+  <text class="head" x="805" y="371" text-anchor="end" fill="#c2410c">SSE = 1.5</text>
+
+  <text x="450" y="485" text-anchor="middle" font-size="21" font-weight="700">R² = 1 − SSE / SST = 1 − 1.5 / 29.1875 ≈ 0.9486</text>
+  <text class="small" x="450" y="520" text-anchor="middle">Here the model's squared residual error is about 5.1% of the mean-baseline variation.</text>
+  <text class="small" x="450" y="546" text-anchor="middle">R² describes this evaluated sample; it does not by itself establish causal effects or acceptable error sizes.</text>
+</svg>

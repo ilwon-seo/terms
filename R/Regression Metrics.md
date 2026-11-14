@@ -20,7 +20,7 @@ For observed values $y_i$ and predictions $\hat{y}_i$, define the residual as $e
 - [**Mean Squared Error (MSE)**](../M/Mean%20Squared%20Error.md): The average squared residual; large errors receive disproportionately more weight.
 - [**Root Mean Squared Error (RMSE)**](./Root%20Mean%20Squared%20Error.md): The square root of MSE, expressed in the target's units.
 - [**Mean Absolute Error (MAE)**](../M/Mean%20Absolute%20Error.md): The average absolute residual; errors grow linearly rather than quadratically.
-- **R-squared ($R^2$):** Compares the residual sum of squares with the variation around the observed mean.
+- [**R-squared ($R^2$)**](./R-squared.md): Compares the residual sum of squares with the variation around the observed mean.
 - **Adjusted R-squared:** Modifies $R^2$ to account for the number of predictors in a fitted regression model.
 
 ## Calculation
@@ -81,7 +81,7 @@ The distinction between fitting loss and evaluation metric is useful: a metric m
 - [**Mean Squared Error (MSE)**](../M/Mean%20Squared%20Error.md): The average squared prediction error.
 - [**Root Mean Squared Error (RMSE)**](./Root%20Mean%20Squared%20Error.md): The square root of MSE, in the target's units.
 - [**Mean Absolute Error (MAE)**](../M/Mean%20Absolute%20Error.md): The average absolute prediction error.
-- **R-squared ($R^2$):** A relative fit measure based on residual and total sums of squares.
+- [**R-squared ($R^2$)**](./R-squared.md): A relative fit measure based on residual and total sums of squares.
 - **Adjusted R-squared:** An $R^2$ variant that accounts for the number of predictors in a regression model.
 - [**Regression**](./Regression.md): The supervised prediction task these metrics evaluate.
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Measures for evaluating categorical predictions and classification scores.
