@@ -43,7 +43,7 @@ Source: Original conceptual diagram based on the threshold-dependent and task-de
 
 ## Interpretation
 
-- **Accuracy** measures the fraction of all predictions that are correct.
+- [**Accuracy**](../A/Accuracy.md) measures the fraction of all predictions that are correct.
 - **Precision** asks what fraction of predicted positives are actually positive; it is relevant when false alarms are costly.
 - **Recall** asks what fraction of actual positives are detected; it is relevant when missing positives is costly.
 - **F1 score** summarizes precision and recall through their harmonic mean, but does not include true negatives.
@@ -67,7 +67,7 @@ Metric selection should reflect how predictions will be used. Accuracy can be in
 ## Derived Subsequent Concepts
 
 - [**Confusion Matrix**](./Confusion%20Matrix.md): The table of actual versus predicted classes from which many label-based classification metrics are calculated.
-- **Accuracy:** The fraction of predictions that are correct.
+- [**Accuracy**](../A/Accuracy.md): The fraction of predictions that are correct.
 - **Precision:** The fraction of predicted positives that are truly positive.
 - **Recall:** The fraction of actual positives that are correctly identified.
 - **F1 Score:** The harmonic mean of precision and recall.
