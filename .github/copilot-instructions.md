@@ -13,6 +13,7 @@ The project is documentation-first: there is no application runtime, build syste
 - Preserve the existing file naming style: title-cased concept names, usually with the topic in the filename when needed.
 - Prefer concise but rigorous explanations, not marketing copy or filler.
 - Use mathematical notation naturally with LaTeX-style inline and block syntax, for example `$\mathbf{v}$` and `$$\|\mathbf{v}\|_2 = \sqrt{\sum_i v_i^2}$$`.
+- Keep math notation compatible with the repository's GitHub rendering and validation: do not use `\operatorname{...}`. For words or named functions in formulas, use `\text{...}` instead (for example, write `\text{sign}`).
 - Use Mermaid diagrams sparingly when they support explanation.
 
 ## Required document structure
@@ -79,6 +80,7 @@ For a practical validation step before finishing:
 - verify the file remains valid Markdown,
 - verify the YAML front matter is intact,
 - verify headings and math/diagram syntax are correctly formatted,
+- check formulas for unsupported LaTeX macros, including `\operatorname`, and use supported alternatives such as `\text{...}`,
 - confirm the new or edited content fits the existing repo conventions.
 
 If a change adds a new term, make sure its name, directory, and structure align with the established pattern used by neighboring files.

@@ -56,7 +56,7 @@ $$
 The final classifier is the sign of a weighted sum of the learners:
 
 $$
-H(x) = \operatorname{sign}\left(\sum_{m=1}^{M}\alpha_m h_m(x)\right)
+H(x) = \text{sign}\left(\sum_{m=1}^{M}\alpha_m h_m(x)\right)
 $$
 
 ### Gradient Boosting
