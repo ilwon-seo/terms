@@ -32,7 +32,7 @@ A useful run record can include parameters, code and data versions, evaluation m
 
 - A record connects a result to the settings and inputs that produced it, making runs easier to compare and revisit.
 - Comparisons are meaningful only when the evaluation protocol is comparable; record which data split and metric produced each score.
-- Logging results supports reproducibility, but does not guarantee that another run will be identical. Randomness, software versions, hardware, and nondeterministic operations can affect outcomes [2].
+- Logging results supports [reproducibility](../R/Reproducibility%20in%20Machine%20Learning.md), but does not guarantee that another run will be identical. Randomness, software versions, hardware, and nondeterministic operations can affect outcomes [2].
 
 ## Necessity
 
@@ -50,7 +50,7 @@ Model development often involves many training runs with different configuration
 - **Training Run:** One execution of a model-training or evaluation procedure, recorded with its configuration and outputs.
 - [**Hyperparameter**](../H/Hyperparameter.md): A configuration choice varied between runs, such as a learning rate.
 - [**Generalization**](../G/Generalization.md): The ability to perform usefully on observations not used to fit a model.
-- **Reproducibility in Machine Learning:** The ability to verify or repeat reported results using documented code, data, and experimental details [2].
+- [**Reproducibility in Machine Learning**](../R/Reproducibility%20in%20Machine%20Learning.md): The ability to verify or repeat reported results using documented code, data, and experimental details [2].
 - **Model Selection:** Choosing a model or configuration based on a prespecified evaluation procedure.
 
 The concept map shows how tracking connects a run's inputs and outputs to comparisons between configurations:
