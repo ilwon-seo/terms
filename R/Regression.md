@@ -13,7 +13,7 @@ mermaid: true
 
 ## Definition
 
-Regression is a supervised learning task in which a model uses input features (also called predictors) to predict a quantitative target (also called a response or label). For example, a model can use a car's weight and other characteristics to predict its fuel efficiency [1].
+Regression is a supervised learning task in which a model uses input features (also called predictors) to predict a quantitative target (also called a response or label). For example, a model can use a car's weight and other characteristics to predict its fuel efficiency [1]. Model performance can be summarized with [regression metrics](./Regression%20Metrics.md).
 
 Regression describes the kind of prediction being made, not one particular model. Linear regression models the target using a function that is linear in its fitted coefficients; it can include transformed features, while other model families can capture relationships in different ways and still predict a quantitative target [1, 2, 3].
 
@@ -78,6 +78,7 @@ Regression is appropriate when the task is to estimate a numerical quantity rath
 - [**Underfitting**](../U/Underfitting.md): Occurs when a fitted model fails to capture relevant structure in the data.
 - [**Overfitting**](../O/Overfitting.md): Occurs when a model fits training-specific patterns that do not generalize.
 - [**Generalization**](../G/Generalization.md): The ability to make useful predictions on data not used to fit the model.
+- [**Regression Metrics**](./Regression%20Metrics.md): Measures used to evaluate predictions of quantitative targets.
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Describes measures for classification, in contrast to regression evaluation measures.
 
 ## References

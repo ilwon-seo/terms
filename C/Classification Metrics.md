@@ -73,6 +73,7 @@ Metric selection should reflect how predictions will be used. Accuracy can be in
 - [**F1 Score**](../F/F1%20Score.md): The harmonic mean of precision and recall.
 - [**ROC Curve**](../R/ROC%20Curve.md): Plots true-positive against false-positive rates across thresholds.
 - [**ROC-AUC**](../R/ROC-AUC.md): Summarizes the area under the ROC curve.
+- [**Regression Metrics**](../R/Regression%20Metrics.md): Measures for numeric-target predictions, in contrast to classification metrics.
 - [**Classification Threshold**](./Classification%20Threshold.md): The cutoff used to convert a classifier's score into a predicted class.
 
 ## References
