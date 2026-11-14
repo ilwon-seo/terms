@@ -45,7 +45,7 @@ Checking class frequencies helps interpret evaluation results and decide which [
 
 ## Limitations and Alternatives
 
-- **The ratio is not a quality score:** A large imbalance ratio does not automatically imply a bad model or an invalid dataset.
+- **The ratio is not a quality score:** A large imbalance ratio does not automatically imply a bad model or [dataset bias](../D/Dataset%20Bias.md); assess class frequencies in the context of the intended population and task.
 - **Metric choice matters:** Report per-class outcomes and consider [balanced accuracy](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html), which averages recall across classes [2].
 - **Preserve the evaluation goal:** Evaluation data should reflect the intended use or explicitly state how sampling differs from it.
 - **Possible training adjustments:** Class weighting or changing the classification threshold may help with a particular objective, but each changes model behavior and must be assessed on appropriate held-out data [3, 4].

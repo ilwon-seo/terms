@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="430" viewBox="0 0 860 430" role="img" aria-labelledby="title description">
+  <title id="title">Illustrative population-to-sample representation mismatch</title>
+  <desc id="description">The target population contains one-third each of groups A, B, and C. The development sample contains 60 percent group A, 30 percent group B, and 10 percent group C. The difference suggests a sampling question to investigate, not a universal bias score.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #4b5563; }
+    .label { font-size: 15px; }
+    .value { font-size: 14px; font-weight: 700; }
+    .tick { font-size: 12px; fill: #4b5563; }
+    .note { font-size: 13px; fill: #4b5563; }
+  </style>
+  <rect width="860" height="430" fill="#ffffff"/>
+  <text class="title" x="430" y="36" text-anchor="middle">Check sample coverage against the intended population</text>
+  <text class="subtitle" x="430" y="60" text-anchor="middle">Hypothetical group proportions; a mismatch is a diagnostic cue, not a bias score</text>
+
+  <rect x="250" y="89" width="16" height="16" rx="3" fill="#2563eb"/>
+  <text class="subtitle" x="274" y="102">Target population</text>
+  <rect x="415" y="89" width="16" height="16" rx="3" fill="#f97316"/>
+  <text class="subtitle" x="439" y="102">Development sample</text>
+
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="250" y1="126" x2="250" y2="326"/>
+    <line x1="350" y1="126" x2="350" y2="326"/>
+    <line x1="450" y1="126" x2="450" y2="326"/>
+    <line x1="550" y1="126" x2="550" y2="326"/>
+    <line x1="650" y1="126" x2="650" y2="326"/>
+  </g>
+  <text class="label" x="110" y="162">Group A</text>
+  <text class="label" x="110" y="232">Group B</text>
+  <text class="label" x="110" y="302">Group C</text>
+
+  <rect x="250" y="137" width="166.5" height="20" rx="3" fill="#2563eb"/>
+  <rect x="250" y="161" width="300" height="20" rx="3" fill="#f97316"/>
+  <text class="value" x="424" y="153">33%</text>
+  <text class="value" x="558" y="177">60%</text>
+
+  <rect x="250" y="207" width="166.5" height="20" rx="3" fill="#2563eb"/>
+  <rect x="250" y="231" width="150" height="20" rx="3" fill="#f97316"/>
+  <text class="value" x="424" y="223">33%</text>
+  <text class="value" x="408" y="247">30%</text>
+
+  <rect x="250" y="277" width="166.5" height="20" rx="3" fill="#2563eb"/>
+  <rect x="250" y="301" width="50" height="20" rx="3" fill="#f97316"/>
+  <text class="value" x="424" y="293">33%</text>
+  <text class="value" x="308" y="317">10%</text>
+
+  <line x1="250" y1="337" x2="750" y2="337" stroke="#64748b" stroke-width="1.5"/>
+  <g class="tick" text-anchor="middle">
+    <text x="250" y="358">0%</text>
+    <text x="350" y="358">20%</text>
+    <text x="450" y="358">40%</text>
+    <text x="550" y="358">60%</text>
+    <text x="650" y="358">80%</text>
+    <text x="750" y="358">100%</text>
+  </g>
+  <text class="note" x="430" y="397" text-anchor="middle">Ask whether the target population and sampling process match the intended use.</text>
+</svg>
