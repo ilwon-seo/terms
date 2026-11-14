@@ -43,7 +43,7 @@ Source: Original schematic of the example values documented by scikit-learn [1].
 
 MSE is nonnegative, and it is zero when every prediction equals its observed target. Squaring makes larger residuals contribute disproportionately: a residual of magnitude $4$ contributes $16$, while a residual of magnitude $1$ contributes $1$. Thus, MSE is especially sensitive to large errors [1].
 
-Because the errors are squared, MSE is expressed in squared target units. Its magnitude is therefore less directly interpretable than the root mean squared error (RMSE), which takes the square root.
+Because the errors are squared, MSE is expressed in squared target units. Its magnitude is therefore less directly interpretable than the [root mean squared error (RMSE)](../R/Root%20Mean%20Squared%20Error.md), which takes the square root.
 
 ## Necessity
 
@@ -61,7 +61,7 @@ MSE provides a single score that penalizes large prediction errors strongly. It 
 
 - [**Regression Metrics**](../R/Regression%20Metrics.md): Compares MSE with other measures of regression performance.
 - [**Regression**](../R/Regression.md): The quantitative prediction task in which MSE is often used.
-- **Root Mean Squared Error (RMSE):** Expresses the square root of MSE in the target's units.
+- [**Root Mean Squared Error (RMSE)**](../R/Root%20Mean%20Squared%20Error.md): Expresses the square root of MSE in the target's units.
 - **Mean Absolute Error (MAE):** A linear-in-error alternative to MSE.
 
 ## References

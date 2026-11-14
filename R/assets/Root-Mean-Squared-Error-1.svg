@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title description">
+  <title id="title">RMSE calculation from residuals to target units</title>
+  <desc id="description">Four residuals are squared and averaged to obtain MSE 0.375 in squared target units. Taking its square root gives RMSE about 0.6124 in the original target units.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .step { font-size: 15px; font-weight: 700; }
+    .value { font-size: 20px; font-weight: 700; }
+    .small { font-size: 13px; fill: #4b5563; }
+    .arrow { stroke: #64748b; stroke-width: 2.5; fill: none; }
+  </style>
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="700">RMSE: average squared errors, then take the square root</text>
+  <text x="450" y="66" text-anchor="middle" font-size="14" fill="#4b5563">Worked example from scikit-learn; values use the example's target scale</text>
+
+  <g>
+    <rect x="35" y="130" width="190" height="205" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <text class="step" x="130" y="165" text-anchor="middle">1. Residuals</text>
+    <text class="small" x="130" y="198" text-anchor="middle">observed − predicted</text>
+    <text class="value" x="130" y="245" text-anchor="middle">[0.5, −0.5, 0, −1]</text>
+    <text class="small" x="130" y="285" text-anchor="middle">in target units</text>
+  </g>
+  <path class="arrow" d="M230 232 H255 M247 224 L255 232 L247 240"/>
+
+  <g>
+    <rect x="260" y="130" width="190" height="205" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text class="step" x="355" y="165" text-anchor="middle">2. Square</text>
+    <text class="small" x="355" y="198" text-anchor="middle">each residual</text>
+    <text class="value" x="355" y="245" text-anchor="middle">[0.25, 0.25, 0, 1]</text>
+    <text class="small" x="355" y="285" text-anchor="middle">in squared target units</text>
+  </g>
+  <path class="arrow" d="M455 232 H480 M472 224 L480 232 L472 240"/>
+
+  <g>
+    <rect x="485" y="130" width="190" height="205" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text class="step" x="580" y="165" text-anchor="middle">3. Average</text>
+    <text class="small" x="580" y="198" text-anchor="middle">this is MSE</text>
+    <text class="value" x="580" y="245" text-anchor="middle">0.375</text>
+    <text class="small" x="580" y="285" text-anchor="middle">in squared target units</text>
+  </g>
+  <path class="arrow" d="M680 232 H705 M697 224 L705 232 L697 240"/>
+
+  <g>
+    <rect x="710" y="130" width="155" height="205" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2"/>
+    <text class="step" x="787.5" y="165" text-anchor="middle">4. Square root</text>
+    <text class="small" x="787.5" y="198" text-anchor="middle">this is RMSE</text>
+    <text class="value" x="787.5" y="245" text-anchor="middle">0.6124</text>
+    <text class="small" x="787.5" y="285" text-anchor="middle">in target units</text>
+  </g>
+
+  <text x="450" y="395" text-anchor="middle" font-size="17">RMSE = √[(0.25 + 0.25 + 0 + 1) / 4] = √0.375 ≈ 0.6124</text>
+  <text class="small" x="450" y="430" text-anchor="middle">Taking the root converts the squared-unit MSE back to the original target scale.</text>
+</svg>
