@@ -58,6 +58,7 @@ Alternatives and complementary methods include permutation importance, impurity-
 - **Permutation Importance:** Estimates reliance on a feature by measuring the score change after its values are shuffled [1].
 - **Mean Decrease in Impurity:** Tree-based importance based on the impurity reductions from splits using a feature [1, 2].
 - **SHAP Values:** Feature attributions for individual predictions; mean absolute SHAP values can be aggregated into a global feature-importance summary [3]. See [SHAP Values](../S/SHAP%20Values.md).
+- **Model Explainability:** The broader goal of making model behavior understandable; feature importance can provide one kind of global summary. See [Model Explainability](../M/Model%20Explainability.md).
 - **Feature Selection:** The process of choosing a subset of input features for a modeling task; importance scores may inform it, but do not by themselves establish that removing a feature is safe.
 
 The concept map shows the data, model, and evaluation metric that inform feature importance, alongside common methods and uses:

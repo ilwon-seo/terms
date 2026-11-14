@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title description">
+  <title id="title">Ways to explain a model</title>
+  <desc id="description">A matrix crosses explanation scope, global or local, with approach, intrinsic or post-hoc. Examples include an inspectable decision tree, a decision path, permutation or mean absolute SHAP summaries, and local SHAP values.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #4b5563; }
+    .axis { font-size: 16px; font-weight: 700; }
+    .head { font-size: 15px; font-weight: 700; }
+    .body { font-size: 14px; }
+    .note { font-size: 13px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="title" x="450" y="38" text-anchor="middle">Model explanations vary by scope and approach</text>
+  <text class="subtitle" x="450" y="63" text-anchor="middle">The two dimensions describe different choices, not a single ranking.</text>
+
+  <text class="axis" x="365" y="108" text-anchor="middle">Global</text>
+  <text class="subtitle" x="365" y="130" text-anchor="middle">Across the model or dataset</text>
+  <text class="axis" x="685" y="108" text-anchor="middle">Local</text>
+  <text class="subtitle" x="685" y="130" text-anchor="middle">For one input or prediction</text>
+
+  <text class="axis" x="56" y="215">Intrinsic</text>
+  <text class="subtitle" x="56" y="237">Model structure</text>
+  <text class="axis" x="56" y="382">Post-hoc</text>
+  <text class="subtitle" x="56" y="404">After training</text>
+
+  <rect x="220" y="150" width="290" height="140" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <rect x="530" y="150" width="290" height="140" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <rect x="220" y="310" width="290" height="140" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <rect x="530" y="310" width="290" height="140" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+
+  <text class="head" x="365" y="186" text-anchor="middle">Inspectable model</text>
+  <text class="body" x="365" y="215" text-anchor="middle">Example: small decision tree</text>
+  <text class="note" x="365" y="244" text-anchor="middle">Inspect overall structure</text>
+
+  <text class="head" x="675" y="186" text-anchor="middle">Model decision path</text>
+  <text class="body" x="675" y="215" text-anchor="middle">Example: path for one input</text>
+  <text class="note" x="675" y="244" text-anchor="middle">Trace one prediction</text>
+
+  <text class="head" x="365" y="346" text-anchor="middle">Post-hoc summary</text>
+  <text class="body" x="365" y="375" text-anchor="middle">Permutation importance</text>
+  <text class="body" x="365" y="399" text-anchor="middle">or mean absolute SHAP values</text>
+  <text class="note" x="365" y="428" text-anchor="middle">Summarize across examples</text>
+
+  <text class="head" x="675" y="346" text-anchor="middle">Post-hoc local explanation</text>
+  <text class="body" x="675" y="375" text-anchor="middle">Example: local SHAP values</text>
+  <text class="note" x="675" y="404" text-anchor="middle">Attribute one model output</text>
+
+  <text class="note" x="450" y="500" text-anchor="middle">Examples are illustrative; methods can differ in assumptions, fidelity, and audience usefulness.</text>
+  <text class="note" x="450" y="526" text-anchor="middle">An explanation describes a model, not necessarily real-world causation.</text>
+</svg>

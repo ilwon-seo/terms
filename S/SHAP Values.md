@@ -69,7 +69,7 @@ SHAP values provide a unified way to attribute an individual prediction across f
 - **Shapley Value:** A cooperative-game allocation that averages a feature's marginal contribution across subsets of other features [1].
 - **Feature Attribution:** A decomposition that assigns contributions to inputs for a particular model output.
 - **Feature Importance:** A broader family of methods for summarizing feature relevance; global summaries of SHAP values are one possible approach.
-- **Model Explainability:** The broader goal of making model behavior understandable to people.
+- **Model Explainability:** The broader goal of making model behavior understandable to people; see [Model Explainability](../M/Model%20Explainability.md).
 
 The concept map shows prerequisite ideas and concepts that build on SHAP values:
 
