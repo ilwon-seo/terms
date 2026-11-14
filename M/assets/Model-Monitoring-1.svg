@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title description">
+  <title id="title">Signals used in model monitoring</title>
+  <desc id="description">Input and prediction data, model quality when outcomes are available, and serving-system health feed a monitoring process. Alerts lead to investigation and a validated response.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #4b5563; }
+    .heading { font-size: 16px; font-weight: 700; }
+    .label { font-size: 14px; }
+    .detail { font-size: 12px; fill: #4b5563; }
+    .signal { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.5; }
+    .monitor { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.5; }
+    .action { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.5; }
+    .arrow { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text class="title" x="450" y="38" text-anchor="middle">Model monitoring combines several production signals</text>
+  <text class="subtitle" x="450" y="64" text-anchor="middle">Choose measures and alert limits for the system's task and risk.</text>
+
+  <text class="heading" x="190" y="110" text-anchor="middle">What is measured?</text>
+  <rect class="signal" x="45" y="130" width="290" height="72" rx="8"/>
+  <text class="label" x="65" y="159">Input and prediction data</text>
+  <text class="detail" x="65" y="182">quality, schema, distributions</text>
+
+  <rect class="signal" x="45" y="220" width="290" height="72" rx="8"/>
+  <text class="label" x="65" y="249">Model quality</text>
+  <text class="detail" x="65" y="272">task metrics when outcomes are available</text>
+
+  <rect class="signal" x="45" y="310" width="290" height="72" rx="8"/>
+  <text class="label" x="65" y="339">Serving-system health</text>
+  <text class="detail" x="65" y="362">latency, errors, request volume</text>
+
+  <path class="arrow" d="M335 166 H415 V245 H445"/>
+  <path class="arrow" d="M335 256 H445"/>
+  <path class="arrow" d="M335 346 H415 V267 H445"/>
+
+  <rect class="monitor" x="445" y="190" width="190" height="110" rx="10"/>
+  <text class="heading" x="540" y="230" text-anchor="middle">Monitoring</text>
+  <text class="label" x="540" y="258" text-anchor="middle">Compare with baselines</text>
+  <text class="detail" x="540" y="280" text-anchor="middle">and defined limits</text>
+
+  <path class="arrow" d="M635 245 H690"/>
+  <rect class="action" x="690" y="160" width="170" height="65" rx="8"/>
+  <text class="heading" x="775" y="188" text-anchor="middle">Alert or finding</text>
+  <text class="detail" x="775" y="209" text-anchor="middle">signal for review</text>
+
+  <path class="arrow" d="M775 225 V272"/>
+  <rect class="action" x="690" y="272" width="170" height="80" rx="8"/>
+  <text class="heading" x="775" y="303" text-anchor="middle">Investigate</text>
+  <text class="detail" x="775" y="326" text-anchor="middle">then validate a response</text>
+
+  <text class="detail" x="450" y="432" text-anchor="middle">An alert prompts investigation; it is not, by itself, proof that the model has failed.</text>
+</svg>
