@@ -35,7 +35,7 @@ $$
 F_1 = 2\frac{\text{Precision}\cdot\text{Recall}}{\text{Precision}+\text{Recall}}.
 $$
 
-The [receiver operating characteristic (ROC) curve](../R/ROC%20Curve.md) evaluates the true positive rate against the false positive rate as the threshold varies. ROC-AUC summarizes the area under that curve, using the classifier's scores across thresholds rather than one selected threshold [2].
+The [receiver operating characteristic (ROC) curve](../R/ROC%20Curve.md) evaluates the true positive rate against the false positive rate as the threshold varies. [ROC-AUC](../R/ROC-AUC.md) summarizes the area under that curve, using the classifier's scores across thresholds rather than one selected threshold [2].
 
 ![Conceptual workflow from classifier scores and a decision threshold to predicted labels and metrics chosen for the task](./assets/Classification-Metrics-1.svg)
 
@@ -71,7 +71,8 @@ Metric selection should reflect how predictions will be used. Accuracy can be in
 - [**Precision**](../P/Precision.md): The fraction of predicted positives that are truly positive.
 - [**Recall**](../R/Recall.md): The fraction of actual positives that are correctly identified.
 - [**F1 Score**](../F/F1%20Score.md): The harmonic mean of precision and recall.
-- [**ROC Curve**](../R/ROC%20Curve.md) and **ROC-AUC:** Threshold-based measures of the relationship between true-positive and false-positive rates.
+- [**ROC Curve**](../R/ROC%20Curve.md): Plots true-positive against false-positive rates across thresholds.
+- [**ROC-AUC**](../R/ROC-AUC.md): Summarizes the area under the ROC curve.
 - **Classification Threshold:** The cutoff used to convert a classifier's score into a predicted class.
 
 ## References

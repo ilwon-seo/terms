@@ -25,7 +25,7 @@ $$
 \text{FPR}(t) = \frac{FP(t)}{FP(t)+TN(t)}.
 $$
 
-Plot $\text{FPR}(t)$ on the horizontal axis and $\text{TPR}(t)$ on the vertical axis as $t$ varies. A larger area under the ROC curve is called a larger [ROC-AUC](../C/Classification%20Metrics.md), a summary measure that will be covered separately [1].
+Plot $\text{FPR}(t)$ on the horizontal axis and $\text{TPR}(t)$ on the vertical axis as $t$ varies. The area under this curve is [ROC-AUC](./ROC-AUC.md), a summary measure across thresholds [1].
 
 ![Conceptual ROC curve plotting true positive rate against false positive rate, with threshold operating points and a random-classifier diagonal](./assets/ROC-Curve-1.svg)
 
@@ -54,7 +54,7 @@ Examining the ROC curve can help compare binary classifiers across thresholds ra
 - [**Recall**](./Recall.md): The true positive rate plotted on the ROC curve.
 - [**Confusion Matrix**](../C/Confusion%20Matrix.md): Supplies the TP, FN, FP, and TN counts used to compute each operating point.
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Describes ROC-AUC among other classification measures.
-- **ROC-AUC:** The area under the ROC curve, which summarizes ranking performance across thresholds.
+- [**ROC-AUC**](./ROC-AUC.md): The area under the ROC curve, which summarizes ranking performance across thresholds.
 - **Classification Threshold:** The score cutoff that selects an operating point on the curve.
 
 ## References
