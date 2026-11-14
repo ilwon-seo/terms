@@ -27,7 +27,7 @@ A test performed at significance level $\alpha$ is designed to control this prob
 
 | Test decision | $H_0$ is true | $H_0$ is false |
 |---|---|---|
-| Do not reject $H_0$ | Correct decision | Type II error ($\beta$) |
+| Do not reject $H_0$ | Correct decision | [Type II error](./Type%20II%20Error.md) ($\beta$) |
 | Reject $H_0$ | Type I error ($\alpha$) | Correct rejection (power $1-\beta$) |
 
 ![Decision outcomes for a hypothesis test, highlighting rejection of a true null hypothesis as a Type I error with probability alpha](./assets/Type-I-Error-1.svg)
@@ -54,7 +54,7 @@ Choosing a significance level makes the tolerated rate of false rejection explic
 
 ## Derived Subsequent Concepts
 
-- **Type II Error:** Failing to reject a false null hypothesis; its probability is commonly denoted by $\beta$.
+- [**Type II Error**](./Type%20II%20Error.md): Failing to reject a false null hypothesis; its probability is commonly denoted by $\beta$.
 - **Significance Level:** The prespecified upper bound on the Type I error probability for a test.
 - **Statistical Power:** The probability of rejecting a false null hypothesis, often written as $1-\beta$.
 - **P-value:** A quantity used to assess how incompatible observed data are with a null model; it is compared with a chosen significance level under a testing procedure.
