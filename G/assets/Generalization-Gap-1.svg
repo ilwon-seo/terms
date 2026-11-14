@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="520" viewBox="0 0 1080 520" role="img" aria-labelledby="title description">
+  <title id="title">Interpret the generalization gap alongside both losses</title>
+  <desc id="description">Three qualitative bar-chart examples compare training and held-out loss. A small gap occurs both when losses are low and when they are high; low training loss with much higher held-out loss shows a large positive gap.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .panel { fill: #ffffff; stroke: #cbd3dc; stroke-width: 1.5; rx: 12; }
+    .heading { font-size: 18px; font-weight: 700; }
+    .label { font-size: 15px; }
+    .axis { stroke: #586574; stroke-width: 2; }
+    .train { fill: #0072B2; }
+    .heldout { fill: #D55E00; }
+  </style>
+  <rect width="1080" height="520" fill="#ffffff"/>
+  <text x="540" y="40" text-anchor="middle" font-size="25" font-weight="700">A gap must be read alongside both losses</text>
+  <text x="540" y="68" text-anchor="middle" font-size="15" fill="#4b5563">Conceptual illustration — bar heights are qualitative, not measured results</text>
+
+  <rect class="panel" x="35" y="100" width="320" height="335"/>
+  <rect class="panel" x="380" y="100" width="320" height="335"/>
+  <rect class="panel" x="725" y="100" width="320" height="335"/>
+
+  <text class="heading" x="195" y="137" text-anchor="middle">Low losses, small gap</text>
+  <text class="heading" x="540" y="137" text-anchor="middle">High losses, small gap</text>
+  <text class="heading" x="885" y="137" text-anchor="middle">Large positive gap</text>
+
+  <g class="axis">
+    <line x1="85" y1="355" x2="315" y2="355"/>
+    <line x1="430" y1="355" x2="660" y2="355"/>
+    <line x1="775" y1="355" x2="1005" y2="355"/>
+  </g>
+
+  <rect class="train" x="125" y="305" width="62" height="50" rx="4"/>
+  <rect class="heldout" x="215" y="287" width="62" height="68" rx="4"/>
+  <rect class="train" x="470" y="210" width="62" height="145" rx="4"/>
+  <rect class="heldout" x="560" y="190" width="62" height="165" rx="4"/>
+  <rect class="train" x="815" y="305" width="62" height="50" rx="4"/>
+  <rect class="heldout" x="905" y="175" width="62" height="180" rx="4"/>
+
+  <g class="label" text-anchor="middle">
+    <text x="156" y="380">Training</text><text x="246" y="380">Held-out</text>
+    <text x="501" y="380">Training</text><text x="591" y="380">Held-out</text>
+    <text x="846" y="380">Training</text><text x="936" y="380">Held-out</text>
+  </g>
+  <g class="label" font-weight="700" text-anchor="middle">
+    <text x="195" y="411" fill="#28613a">Gap alone looks small</text>
+    <text x="540" y="411" fill="#8a4b16">Poor performance on both</text>
+    <text x="885" y="411" fill="#8b3030">Held-out loss is much higher</text>
+  </g>
+
+  <rect class="train" x="330" y="462" width="17" height="17" rx="3"/>
+  <text class="label" x="354" y="476">Training loss</text>
+  <rect class="heldout" x="515" y="462" width="17" height="17" rx="3"/>
+  <text class="label" x="539" y="476">Held-out loss</text>
+  <text x="540" y="505" text-anchor="middle" font-size="14" fill="#4b5563">Lower loss is better; compare the two losses as well as their difference.</text>
+</svg>

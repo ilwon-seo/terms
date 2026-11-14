@@ -19,7 +19,7 @@ Overfitting is about generalization, not simply about using a complex model. Mod
 
 ## Calculation
 
-For a loss where smaller values are better, one diagnostic is the difference between validation and training loss:
+For a loss where smaller values are better, one diagnostic is the [difference between validation and training loss](../G/Generalization%20Gap.md):
 
 $$
 \widehat{\Delta}_{\text{generalization}} = \widehat{R}_{\text{validation}} - \widehat{R}_{\text{training}}.
@@ -52,7 +52,7 @@ Detecting overfitting helps choose interventions that improve performance on uns
 
 - [**Underfitting**](../U/Underfitting.md): A model fails to capture relevant structure and performs poorly even on its training data.
 - [**Bias-Variance Tradeoff**](../B/Bias-Variance%20Tradeoff.md): A framework for understanding systematic prediction error and sensitivity to the training sample.
-- **Generalization Gap:** The difference between performance on unseen data and training data; it is a diagnostic quantity, not a complete explanation of model behavior.
+- [**Generalization Gap**](../G/Generalization%20Gap.md): The difference between performance on unseen data and training data; it is a diagnostic quantity, not a complete explanation of model behavior.
 - **Regularization:** A family of techniques, including L1, L2, and dropout, that can constrain fitting.
 
 ## References

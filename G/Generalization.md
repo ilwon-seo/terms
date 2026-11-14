@@ -39,7 +39,7 @@ Source: Original schematic for this entry, based on the held-out evaluation work
 
 A model generalizes well when its chosen performance measure remains useful on new, relevant observations. A low training loss is not sufficient: the model may have fit sample-specific patterns and perform worse on unseen data, a pattern associated with [overfitting](../O/Overfitting.md). Conversely, a model that performs poorly even on its training data may be [underfitting](../U/Underfitting.md).
 
-Generalization is not the same as a small [generalization gap](../O/Overfitting.md), which compares training and unseen-data performance. Both training and test performance can be poor while the gap remains small.
+Generalization is not the same as a small [generalization gap](./Generalization%20Gap.md), which compares training and unseen-data performance. Both training and test performance can be poor while the gap remains small.
 
 ## Necessity
 
@@ -58,7 +58,7 @@ The purpose of evaluating generalization is to estimate how a model will perform
 - [**Overfitting**](../O/Overfitting.md): A model fits training-specific details and performs worse on unseen data.
 - [**Underfitting**](../U/Underfitting.md): A model fails to capture relevant structure, often performing poorly on training and unseen data.
 - [**Bias-Variance Tradeoff**](../B/Bias-Variance%20Tradeoff.md): A framework for understanding components of expected prediction error under squared loss.
-- **Generalization Gap:** The difference between training and unseen-data performance; it is a diagnostic comparison, not a complete measure of generalization.
+- [**Generalization Gap**](./Generalization%20Gap.md): The difference between training and unseen-data performance; it is a diagnostic comparison, not a complete measure of generalization.
 
 ## References
 
