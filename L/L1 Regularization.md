@@ -35,7 +35,7 @@ $$
 \min_{\mathbf{w}} \left(\frac{1}{2n}\sum_{i=1}^{n}(\mathbf{x}_i^\top\mathbf{w}-y_i)^2 + \lambda\sum_{j=1}^{d}|w_j|\right).
 $$
 
-Here, $\mathbf{x}_i^\top$ is the $i$th row of $X$.
+Here, the feature vector for observation i is the ith row of the design matrix.
 
 The intercept, when present, is commonly left unpenalized. Scaling constants and the name of the strength parameter vary between implementations. For example, if $\mathbf{w}=(2,-0.5,0)$, its L1 penalty before multiplying by $\lambda$ is $2.5$.
 
