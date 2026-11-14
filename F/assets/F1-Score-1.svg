@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" role="img" aria-labelledby="title description">
+  <title id="title">F1 as the harmonic mean of precision and recall</title>
+  <desc id="description">An illustrative example has precision 80 percent and recall 50 percent. Their harmonic mean, F1, is about 61.5 percent, below their arithmetic mean of 65 percent.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .label { font-size: 17px; }
+    .strong { font-size: 21px; font-weight: 700; }
+    .small { font-size: 15px; fill: #4b5563; }
+  </style>
+  <rect width="900" height="450" fill="#ffffff"/>
+  <text x="450" y="42" text-anchor="middle" font-size="25" font-weight="700">F1 combines precision and recall</text>
+  <text x="450" y="72" text-anchor="middle" font-size="15" fill="#4b5563">Illustrative example — scores are constructed, not measured</text>
+
+  <line x1="185" y1="330" x2="715" y2="330" stroke="#586574" stroke-width="2"/>
+  <line x1="185" y1="140" x2="185" y2="330" stroke="#586574" stroke-width="2"/>
+  <line x1="185" y1="235" x2="715" y2="235" stroke="#e0e5ea" stroke-width="1"/>
+  <line x1="185" y1="140" x2="715" y2="140" stroke="#e0e5ea" stroke-width="1"/>
+  <text class="small" x="170" y="335" text-anchor="end">0%</text>
+  <text class="small" x="170" y="240" text-anchor="end">50%</text>
+  <text class="small" x="170" y="145" text-anchor="end">100%</text>
+
+  <rect x="260" y="178" width="110" height="152" rx="5" fill="#0072B2"/>
+  <rect x="395" y="235" width="110" height="95" rx="5" fill="#D55E00"/>
+  <rect x="530" y="213" width="110" height="117" rx="5" fill="#3b8053"/>
+  <text class="strong" x="315" y="165" text-anchor="middle">80%</text>
+  <text class="strong" x="450" y="222" text-anchor="middle">50%</text>
+  <text class="strong" x="585" y="200" text-anchor="middle">61.5%</text>
+  <text class="label" x="315" y="360" text-anchor="middle">Precision</text>
+  <text class="label" x="450" y="360" text-anchor="middle">Recall</text>
+  <text class="label" x="585" y="360" text-anchor="middle">F1</text>
+  <text class="small" x="450" y="411" text-anchor="middle">The harmonic mean is pulled toward the lower of the two scores.</text>
+</svg>

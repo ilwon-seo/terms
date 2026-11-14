@@ -55,7 +55,7 @@ Recall is useful when identifying as many actual positive cases as possible is a
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Places recall alongside accuracy, precision, F1, and other measures.
 - [**Confusion Matrix**](../C/Confusion%20Matrix.md): Supplies the TP and FN counts used in recall.
 - [**Precision**](../P/Precision.md): The fraction of predicted positives that are actually positive.
-- **F1 Score:** A harmonic-mean summary of precision and recall.
+- [**F1 Score**](../F/F1%20Score.md): A harmonic-mean summary of precision and recall.
 - **ROC Curve and ROC-AUC:** Compare true positive rates with false positive rates across thresholds.
 - **Classification Threshold:** A score cutoff that affects which cases are predicted positive.
 

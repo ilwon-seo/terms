@@ -48,7 +48,7 @@ Accuracy is easy to calculate and interpret and can serve as an initial summary 
 - **[Class imbalance](../C/Class%20Imbalance.md):** A classifier can have high accuracy by predicting the majority class while missing most minority-class observations.
 - **Equal error weighting:** Accuracy counts a false positive and a false negative as equally incorrect, even when their consequences differ.
 - **Threshold dependence:** For score-based classifiers, accuracy changes with the classification threshold.
-- **It does not explain errors:** Inspect a [confusion matrix](../C/Confusion%20Matrix.md) or report metrics such as [precision](../P/Precision.md), [recall](../R/Recall.md), and F1 when the types of error matter [1].
+- **It does not explain errors:** Inspect a [confusion matrix](../C/Confusion%20Matrix.md) or report metrics such as [precision](../P/Precision.md), [recall](../R/Recall.md), and [F1](../F/F1%20Score.md) when the types of error matter [1].
 - **Sample dependence:** An observed accuracy is an estimate based on a finite evaluation sample and may vary across samples.
 
 ## Derived Subsequent Concepts
