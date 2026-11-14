@@ -45,7 +45,7 @@ Source: Original conceptual diagram based on the threshold-dependent and task-de
 
 - [**Accuracy**](../A/Accuracy.md) measures the fraction of all predictions that are correct.
 - [**Precision**](../P/Precision.md) asks what fraction of predicted positives are actually positive; it is relevant when false alarms are costly.
-- **Recall** asks what fraction of actual positives are detected; it is relevant when missing positives is costly.
+- [**Recall**](../R/Recall.md) asks what fraction of actual positives are detected; it is relevant when missing positives is costly.
 - **F1 score** summarizes precision and recall through their harmonic mean, but does not include true negatives.
 - **ROC-AUC** summarizes ranking discrimination across thresholds; it does not choose a threshold for a particular decision.
 
@@ -69,7 +69,7 @@ Metric selection should reflect how predictions will be used. Accuracy can be in
 - [**Confusion Matrix**](./Confusion%20Matrix.md): The table of actual versus predicted classes from which many label-based classification metrics are calculated.
 - [**Accuracy**](../A/Accuracy.md): The fraction of predictions that are correct.
 - [**Precision**](../P/Precision.md): The fraction of predicted positives that are truly positive.
-- **Recall:** The fraction of actual positives that are correctly identified.
+- [**Recall**](../R/Recall.md): The fraction of actual positives that are correctly identified.
 - **F1 Score:** The harmonic mean of precision and recall.
 - **ROC Curve and ROC-AUC:** Threshold-based measures of the relationship between true-positive and false-positive rates.
 - **Classification Threshold:** The cutoff used to convert a classifier's score into a predicted class.

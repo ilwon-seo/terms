@@ -37,7 +37,7 @@ Higher precision means fewer false positives among positive predictions. It can 
 
 ## Necessity
 
-Precision is useful when the reliability of positive predictions matters. It should be considered alongside [recall](../C/Classification%20Metrics.md), which measures how many actual positives were found; a classifier can have high precision while missing many positive cases.
+Precision is useful when the reliability of positive predictions matters. It should be considered alongside [recall](../R/Recall.md), which measures how many actual positives were found; a classifier can have high precision while missing many positive cases.
 
 ## Limitations and Alternatives
 
@@ -52,7 +52,7 @@ Precision is useful when the reliability of positive predictions matters. It sho
 
 - [**Classification Metrics**](../C/Classification%20Metrics.md): Places precision alongside accuracy, recall, F1, and other measures.
 - [**Confusion Matrix**](../C/Confusion%20Matrix.md): Supplies the TP and FP counts used in precision.
-- **Recall:** The fraction of actual positives that are correctly identified.
+- [**Recall**](../R/Recall.md): The fraction of actual positives that are correctly identified.
 - **F1 Score:** A harmonic-mean summary of precision and recall.
 - **Classification Threshold:** A score cutoff that affects the set of positive predictions.
 - [**Class Imbalance**](../C/Class%20Imbalance.md): A difference in class frequencies that can affect interpretation of precision.

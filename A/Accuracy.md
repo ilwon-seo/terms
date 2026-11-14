@@ -48,7 +48,7 @@ Accuracy is easy to calculate and interpret and can serve as an initial summary 
 - **[Class imbalance](../C/Class%20Imbalance.md):** A classifier can have high accuracy by predicting the majority class while missing most minority-class observations.
 - **Equal error weighting:** Accuracy counts a false positive and a false negative as equally incorrect, even when their consequences differ.
 - **Threshold dependence:** For score-based classifiers, accuracy changes with the classification threshold.
-- **It does not explain errors:** Inspect a [confusion matrix](../C/Confusion%20Matrix.md) or report metrics such as [precision](../P/Precision.md), [recall](../C/Classification%20Metrics.md), and F1 when the types of error matter [1].
+- **It does not explain errors:** Inspect a [confusion matrix](../C/Confusion%20Matrix.md) or report metrics such as [precision](../P/Precision.md), [recall](../R/Recall.md), and F1 when the types of error matter [1].
 - **Sample dependence:** An observed accuracy is an estimate based on a finite evaluation sample and may vary across samples.
 
 ## Derived Subsequent Concepts
@@ -56,7 +56,7 @@ Accuracy is easy to calculate and interpret and can serve as an initial summary 
 - [**Classification Metrics**](../C/Classification%20Metrics.md): A broader family of measures for different aspects of classifier performance.
 - [**Confusion Matrix**](../C/Confusion%20Matrix.md): Separates correct predictions and error types that contribute to accuracy.
 - [**Precision**](../C/Classification%20Metrics.md): The fraction of predicted positives that are actually positive.
-- [**Recall**](../C/Classification%20Metrics.md): The fraction of actual positives that are correctly identified.
+- [**Recall**](../R/Recall.md): The fraction of actual positives that are correctly identified.
 - **Balanced Accuracy:** An alternative that averages recall across classes so that each class contributes equally.
 
 ## References
