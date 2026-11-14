@@ -70,6 +70,8 @@ This order should be preserved unless the concept genuinely requires a different
 - Keep examples consistent with the rest of the repository's technical tone.
 - Preserve the author/date metadata format when editing existing files.
 - When adding a new term, create the appropriate letter-named directory and use a clear filename.
+- When an image is needed, store it in an `assets/` directory inside the term's letter directory (for example, `N/assets/`). Name each image with the entry name and a sequential number, such as `Norm (mathematics)-1.png`.
+- Cite each image's source in a body footnote, and reference the image from the term page with a Markdown relative path (for example, `![Description](<./assets/Norm (mathematics)-1.png>)` when the assets directory is next to the term page).
 
 ## Validation
 
@@ -81,6 +83,7 @@ For a practical validation step before finishing:
 - verify the YAML front matter is intact,
 - verify headings and math/diagram syntax are correctly formatted,
 - check formulas for unsupported LaTeX macros, including `\operatorname`, and use supported alternatives such as `\text{...}`,
+- verify image links use relative paths and each image has a source citation in a body footnote,
 - confirm the new or edited content fits the existing repo conventions.
 
 If a change adds a new term, make sure its name, directory, and structure align with the established pattern used by neighboring files.
