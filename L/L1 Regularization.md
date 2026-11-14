@@ -32,9 +32,14 @@ $$
 For the lasso with a squared-error loss and design matrix $X$, response vector $\mathbf{y}$, and $n$ observations, one common convention is:
 
 $$
-\min_{\mathbf{w}} \frac{1}{2n}\|X\mathbf{w}-\mathbf{y}\|_2^2
-+ \lambda\|\mathbf{w}\|_1.
+\min_{\mathbf{w}}
+\left[
+\frac{1}{2n}\sum_{i=1}^{n}(\mathbf{x}_i^\top\mathbf{w}-y_i)^2
++ \lambda\sum_{j=1}^{d}|w_j|
+\right].
 $$
+
+Here, $\mathbf{x}_i^\top$ is the $i$th row of $X$.
 
 The intercept, when present, is commonly left unpenalized. Scaling constants and the name of the strength parameter vary between implementations. For example, if $\mathbf{w}=(2,-0.5,0)$, its L1 penalty before multiplying by $\lambda$ is $2.5$.
 

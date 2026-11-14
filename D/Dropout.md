@@ -19,7 +19,7 @@ Dropout is a **regularization** technique, not a normalization method. Normaliza
 
 ## Calculation
 
-Let $x$ be an activation and let $p$ be the probability of dropping it. Define a random mask $m$ by:
+Let $x$ be an activation and let $p$ be the probability of dropping it, with $0 \leq p < 1$ for inverted dropout. Define a random mask $m$ by:
 
 $$
 m \sim \text{Bernoulli}(1-p)
