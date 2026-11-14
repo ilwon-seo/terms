@@ -53,12 +53,12 @@ These metrics answer different questions and should not be treated as interchang
 
 ## Necessity
 
-Metric selection should reflect how predictions will be used. Accuracy can be informative when classes and error costs are reasonably balanced, but in an imbalanced dataset it can be high even when a classifier fails to identify the minority class. Precision and recall expose different types of positive-class errors, while F1 provides a single summary of those two quantities [1].
+Metric selection should reflect how predictions will be used. Accuracy can be informative when classes and error costs are reasonably balanced, but in a [class-imbalanced dataset](./Class%20Imbalance.md) it can be high even when a classifier fails to identify the minority class. Precision and recall expose different types of positive-class errors, while F1 provides a single summary of those two quantities [1].
 
 ## Limitations and Alternatives
 
 - **Threshold dependence:** Accuracy, precision, recall, and F1 can change when the classification threshold changes. State the threshold or explain how it was selected.
-- **Class imbalance:** Accuracy alone can conceal poor performance on a rare class.
+- **[Class imbalance](./Class%20Imbalance.md):** Accuracy alone can conceal poor performance on a rare class.
 - **Metric tradeoffs:** A threshold change may improve precision while reducing recall, or vice versa. A single metric does not encode every error cost.
 - **ROC-AUC is not an operating point:** A strong ROC-AUC does not identify which threshold meets a deployment requirement; evaluate the chosen threshold and relevant error rates [2].
 - **Binary formulas need multiclass choices:** For multiclass tasks, metrics may be aggregated across classes in different ways; report the averaging method as well as the score [2].

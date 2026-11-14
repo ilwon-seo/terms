@@ -45,7 +45,7 @@ Accuracy is easy to calculate and interpret and can serve as an initial summary 
 
 ## Limitations and Alternatives
 
-- **Class imbalance:** A classifier can have high accuracy by predicting the majority class while missing most minority-class observations.
+- **[Class imbalance](../C/Class%20Imbalance.md):** A classifier can have high accuracy by predicting the majority class while missing most minority-class observations.
 - **Equal error weighting:** Accuracy counts a false positive and a false negative as equally incorrect, even when their consequences differ.
 - **Threshold dependence:** For score-based classifiers, accuracy changes with the classification threshold.
 - **It does not explain errors:** Inspect a [confusion matrix](../C/Confusion%20Matrix.md) or report metrics such as [precision](../C/Classification%20Metrics.md), [recall](../C/Classification%20Metrics.md), and F1 when the types of error matter [1].

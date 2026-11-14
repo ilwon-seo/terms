@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title description">
+  <title id="title">Class imbalance can make accuracy misleading</title>
+  <desc id="description">An illustrative dataset has 99 negative cases and 1 positive case. A classifier that predicts every case as negative gets 99 percent accuracy but zero recall for the positive class.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .heading { font-size: 19px; font-weight: 700; }
+    .label { font-size: 16px; }
+    .small { font-size: 14px; fill: #4b5563; }
+    .panel { fill: #ffffff; stroke: #cbd3dc; stroke-width: 1.5; rx: 12; }
+  </style>
+  <rect width="1000" height="520" fill="#ffffff"/>
+  <text x="500" y="40" text-anchor="middle" font-size="25" font-weight="700">A majority-class prediction can hide missed positives</text>
+  <text x="500" y="68" text-anchor="middle" font-size="15" fill="#4b5563">Illustrative example — 100 observations, not measured data</text>
+
+  <rect class="panel" x="35" y="105" width="420" height="345"/>
+  <rect class="panel" x="485" y="105" width="480" height="345"/>
+  <text class="heading" x="245" y="143" text-anchor="middle">Actual class distribution</text>
+  <text class="heading" x="725" y="143" text-anchor="middle">Always predict negative</text>
+
+  <rect x="95" y="178" width="300" height="46" rx="5" fill="#3973ac"/>
+  <rect x="95" y="178" width="3" height="46" rx="2" fill="#d55e00"/>
+  <text class="label" x="245" y="256" text-anchor="middle">99 negative examples</text>
+  <text class="label" x="245" y="283" text-anchor="middle">1 positive example</text>
+  <text class="small" x="245" y="319" text-anchor="middle">Positive class: 1% of the sample</text>
+
+  <rect x="545" y="178" width="180" height="75" rx="6" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+  <rect x="735" y="178" width="180" height="75" rx="6" fill="#fff0eb" stroke="#bd573a" stroke-width="2"/>
+  <rect x="545" y="263" width="180" height="75" rx="6" fill="#fff3df" stroke="#bd7a19" stroke-width="2"/>
+  <rect x="735" y="263" width="180" height="75" rx="6" fill="#e8f4ec" stroke="#3b8053" stroke-width="2"/>
+  <text class="label" x="635" y="207" text-anchor="middle">TN = 99</text>
+  <text class="small" x="635" y="231" text-anchor="middle">correct negatives</text>
+  <text class="label" x="825" y="207" text-anchor="middle">FP = 0</text>
+  <text class="small" x="825" y="231" text-anchor="middle">no predicted positives</text>
+  <text class="label" x="635" y="292" text-anchor="middle">FN = 1</text>
+  <text class="small" x="635" y="316" text-anchor="middle">missed positive</text>
+  <text class="label" x="825" y="292" text-anchor="middle">TP = 0</text>
+  <text class="small" x="825" y="316" text-anchor="middle">no detected positives</text>
+
+  <text x="725" y="377" text-anchor="middle" font-size="18" font-weight="700" fill="#28613a">Accuracy = 99%</text>
+  <text x="725" y="405" text-anchor="middle" font-size="18" font-weight="700" fill="#8b3030">Positive-class recall = 0%</text>
+  <text class="small" x="500" y="480" text-anchor="middle">High overall accuracy does not guarantee useful performance on every class.</text>
+</svg>
