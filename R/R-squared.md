@@ -64,7 +64,7 @@ $R^2$ provides a dimensionless comparison with a mean-prediction baseline, which
 - [**Regression Metrics**](./Regression%20Metrics.md): Compares $R^2$ with absolute- and squared-error measures.
 - [**Mean Squared Error (MSE)**](../M/Mean%20Squared%20Error.md): A squared-error metric used in the numerator of the common $R^2$ formula.
 - [**Regression**](./Regression.md): The quantitative prediction task in which $R^2$ is commonly used.
-- **Adjusted R-squared:** A related statistic that accounts for the number of predictors in a fitted regression model.
+- [**Adjusted R-squared**](../A/Adjusted%20R-squared.md): A related statistic that accounts for the number of predictors in a fitted regression model.
 
 The diagram summarizes the concepts that feed into the common $R^2$ definition and the statistic derived from it:
 
