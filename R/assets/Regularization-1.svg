@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="500" viewBox="0 0 1040 500" role="img" aria-labelledby="title description">
+  <title id="title">Different mechanisms of regularization</title>
+  <desc id="description">A conceptual diagram showing two ways to regularize model fitting: add L1 or L2 parameter penalties to the objective, or change neural-network training with dropout's random activation masking.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#435466"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+      .box { stroke-width: 2; rx: 12; }
+      .heading { font-size: 19px; font-weight: 700; }
+      .detail { font-size: 15px; fill: #3f4b57; }
+      .arrow { fill: none; stroke: #435466; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1040" height="500" fill="#ffffff"/>
+  <text x="520" y="40" text-anchor="middle" font-size="25" font-weight="700">Regularization methods use different mechanisms</text>
+  <text x="520" y="68" text-anchor="middle" font-size="15" fill="#4b5563">Conceptual overview — each method changes how a model is fitted</text>
+
+  <rect class="box" x="350" y="100" width="340" height="78" fill="#eef2f6" stroke="#667788"/>
+  <text class="heading" x="520" y="132" text-anchor="middle">Control model fitting</text>
+  <text class="detail" x="520" y="157" text-anchor="middle">to discourage training-specific solutions</text>
+
+  <path class="arrow" d="M430 178 V222 H265 V248"/>
+  <path class="arrow" d="M610 178 V222 H775 V248"/>
+
+  <rect class="box" x="55" y="250" width="420" height="175" fill="#eaf2fb" stroke="#3973ac"/>
+  <text class="heading" x="265" y="286" text-anchor="middle">Modify the objective</text>
+  <text class="detail" x="265" y="313" text-anchor="middle">Add a parameter penalty to data loss</text>
+  <rect class="box" x="90" y="342" width="155" height="58" fill="#ffffff" stroke="#3973ac"/>
+  <rect class="box" x="285" y="342" width="155" height="58" fill="#ffffff" stroke="#3973ac"/>
+  <text class="heading" x="167" y="367" text-anchor="middle">L1</text>
+  <text class="detail" x="167" y="389" text-anchor="middle">absolute values</text>
+  <text class="heading" x="362" y="367" text-anchor="middle">L2</text>
+  <text class="detail" x="362" y="389" text-anchor="middle">squared values</text>
+
+  <rect class="box" x="565" y="250" width="420" height="175" fill="#fff3df" stroke="#bd7a19"/>
+  <text class="heading" x="775" y="286" text-anchor="middle">Modify the training procedure</text>
+  <text class="detail" x="775" y="313" text-anchor="middle">Randomly mask neural-network activations</text>
+  <rect class="box" x="685" y="342" width="180" height="58" fill="#ffffff" stroke="#bd7a19"/>
+  <text class="heading" x="775" y="378" text-anchor="middle">Dropout</text>
+
+  <text x="520" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#5b4b2f">Choose and evaluate the method for the model and task; no method guarantees better results.</text>
+</svg>

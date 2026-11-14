@@ -13,7 +13,7 @@ mermaid: true
 
 ## Definition
 
-Dropout is a regularization technique for neural networks. During training, it randomly sets selected activations to zero, so a different thinned network is used on each training pass. This discourages units from relying too heavily on particular other units, a phenomenon described as co-adaptation [1].
+Dropout is a [regularization](../R/Regularization.md) technique for neural networks. During training, it randomly sets selected activations to zero, so a different thinned network is used on each training pass. This discourages units from relying too heavily on particular other units, a phenomenon described as co-adaptation [1].
 
 Dropout is a **regularization** technique, not a normalization method. Normalization methods transform or standardize activations or inputs; dropout instead applies a random mask during training to reduce overfitting.
 

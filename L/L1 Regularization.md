@@ -13,7 +13,7 @@ mermaid: true
 
 ## Definition
 
-L1 regularization adds a penalty proportional to the L1 norm of a model's parameters to its training objective. For a parameter vector $\mathbf{w}$, the penalty is $\lambda \|\mathbf{w}\|_1$, where $\lambda \geq 0$ controls its strength and
+[L1 regularization](../R/Regularization.md) adds a penalty proportional to the L1 norm of a model's parameters to its training objective. For a parameter vector $\mathbf{w}$, the penalty is $\lambda \|\mathbf{w}\|_1$, where $\lambda \geq 0$ controls its strength and
 
 $$
 \|\mathbf{w}\|_1 = \sum_{j=1}^{d} |w_j|.

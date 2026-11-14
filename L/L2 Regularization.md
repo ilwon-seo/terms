@@ -13,7 +13,7 @@ mermaid: true
 
 ## Definition
 
-L2 regularization adds a penalty proportional to the squared L2 norm of a model's parameters to its training objective. For a parameter vector $\mathbf{w}$, the commonly used penalty is $\lambda\|\mathbf{w}\|_2^2$, where $\lambda \geq 0$ controls its strength and
+[L2 regularization](../R/Regularization.md) adds a penalty proportional to the squared L2 norm of a model's parameters to its training objective. For a parameter vector $\mathbf{w}$, the commonly used penalty is $\lambda\|\mathbf{w}\|_2^2$, where $\lambda \geq 0$ controls its strength and
 
 $$
 \|\mathbf{w}\|_2^2 = \sum_{j=1}^{d} w_j^2.
