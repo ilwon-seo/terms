@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" role="img" aria-labelledby="title description">
+  <title id="title">Shadow testing traffic flow</title>
+  <desc id="description">Production requests go to both the live model and a shadow candidate. The live model's response is returned to the user. The candidate response is logged for offline comparison and is not sent to the user.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #202124; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #4b5563; }
+    .label { font-size: 15px; font-weight: 700; }
+    .detail { font-size: 13px; fill: #4b5563; }
+    .user-box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; }
+    .live-box { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; }
+    .shadow-box { fill: #f8fafc; stroke: #64748b; stroke-width: 1.5; stroke-dasharray: 6 4; }
+    .main { stroke: #2563eb; stroke-width: 2.5; fill: none; marker-end: url(#arrow-blue); }
+    .mirror { stroke: #64748b; stroke-width: 2; fill: none; stroke-dasharray: 6 4; marker-end: url(#arrow-gray); }
+    .response { stroke: #2563eb; stroke-width: 2.5; fill: none; marker-end: url(#arrow-blue); }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text class="title" x="450" y="40" text-anchor="middle">Shadow testing mirrors requests, not user-facing responses</text>
+  <text class="subtitle" x="450" y="66" text-anchor="middle">The live model remains the production decision-maker during the test.</text>
+
+  <rect class="user-box" x="50" y="190" width="150" height="72" rx="8"/>
+  <text class="label" x="125" y="220" text-anchor="middle">Production</text>
+  <text class="detail" x="125" y="242" text-anchor="middle">request</text>
+
+  <circle cx="280" cy="226" r="10" fill="#64748b"/>
+  <text class="detail" x="280" y="258" text-anchor="middle">copy request</text>
+  <path class="main" d="M200 226 H268"/>
+  <path class="main" d="M290 226 H390 V166 H450"/>
+  <path class="mirror" d="M290 226 H390 V326 H450"/>
+
+  <rect class="live-box" x="450" y="120" width="190" height="92" rx="8"/>
+  <text class="label" x="545" y="153" text-anchor="middle">Live model</text>
+  <text class="detail" x="545" y="178" text-anchor="middle">serves the response</text>
+
+  <rect class="shadow-box" x="450" y="280" width="190" height="92" rx="8"/>
+  <text class="label" x="545" y="313" text-anchor="middle">Shadow candidate</text>
+  <text class="detail" x="545" y="338" text-anchor="middle">output is not served</text>
+
+  <rect class="user-box" x="730" y="130" width="140" height="64" rx="8"/>
+  <text class="label" x="800" y="158" text-anchor="middle">User</text>
+  <text class="detail" x="800" y="179" text-anchor="middle">gets live output</text>
+  <path class="response" d="M640 166 H730"/>
+
+  <rect x="710" y="290" width="170" height="80" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="label" x="795" y="321" text-anchor="middle">Offline comparison</text>
+  <text class="detail" x="795" y="345" text-anchor="middle">outputs and metrics</text>
+  <path class="mirror" d="M640 326 H710"/>
+
+  <text class="detail" x="450" y="430" text-anchor="middle">Only the solid blue response path reaches the user; the dashed shadow output is analyzed separately.</text>
+</svg>
